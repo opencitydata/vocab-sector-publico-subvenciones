@@ -1,0 +1,40 @@
+<h2 id="desc" class="list">Vocabulario para la representación de datos sobre subvenciones concedidas por un municipio: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">La siguiente figura muestra el diagrama de clases de la ontología, donde se puede observar que el elemento central es la clase [essubv:Subvencion](http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion), definida en este vocabulario:</span>
+<center><img src="resources/images/modeloConceptual.png"><figcaption>Figura 1. - Vocabulario para la representación de datos sobre subvenciones</figcaption></center>
+
+<span class="markdown">
+
+Adicionalmente, en este vocabulario se han utilizado varios esquemas de conceptos SKOS para representar:
+
+- Tipos de instrumento
+- Tipos de procedimiento
+- Clasificación de programa de gasto
+- Clasificación económica de gasto
+- Temáticas de subvenciones
+
+En la Figura 1 se pueden observar varias relaciones con la clase de conceptos SKOS, sin embargo, los valores concretos no se han especificado pues son diferentes según la taxonomía que representen. Por ejemplo, la propiedad [essubv:tipoProcedimiento](#tipoProcedimiento) representa si la subvención es de tipo "concesión-directa" o "concurrencia".
+
+</span>
+
+<h3>Ejemplos de uso<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
+<span class="markdown">
+  Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de este vocabulario se proporcionarán a continuación algunos ejemplos.
+
+  En primer lugar, para la representación de una subvención, se crea una instancia de la clase [essubv:Subvencion](#Subvencion) con las propiedades [dct:identifier](http://purl.org/dc/terms/identifier) (identificador de la subvención), [dct:title](http://purl.org/dc/terms/title) (título de la subvención), [essubv:tieneTematica](#tieneTematica) (temática de la subvención), [essubv:tipoInstrumento](#tipoInstrumento) (instrumento de la subvención), [essubv:beneficiario](#beneficiario) (beneficiario de la subvención), [essubv:importeConcedido](#importeConcedido) (importe final de la subvención) y [essubv:fechaAdjudicacion](#fechaAdjudicacion) (fecha de adjudicación de la subvención)
+</span>
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/Subvencion/1418&gt; a essubv:Subvencion ;
+  dct:identifier "1418"@es ;
+  dct:title "AYUDAS ECONÓMICAS DE ZARAGOZA DEPORTE MUNICIPAL A ENTIDADES DEPORTIVAS DE BASE"@es ;
+  essubv:tieneTematica "Promoción del Deporte"@es ;
+  essubv:tipoInstrumento "Concurrencia Competitiva"@es ;
+  essubv:beneficiario "G99023392"@es ;
+  essubv:importeConcedido 380 ;
+  essubv:fechaAdjudicacion "2014-04-30T00:00:00"^^xsd:dateTime ;
+</pre>
+Como se observa en el ejemplo anterior. La subvención se enlaza con el beneficiario a través de su identificador. El siguiente ejemplo muestra la información de dicho beneficiario, la cual estaría compuesta por su identificador y por su nombre:
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/G99023392&gt; a org:Organization ;
+  dct:identifier "G99023392"@es ;
+  foaf:name "ASOCIACION CULTURAL DEPORTIVA CLUB BOMBA BASKET"@es .
+</pre>

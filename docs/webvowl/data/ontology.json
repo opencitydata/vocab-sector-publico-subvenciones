@@ -1,0 +1,1734 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "https://www.w3.org/ns/org", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2001/XMLSchema", "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto", "http://dbpedia.org/ontology", "http://www.geonames.org/ontology", "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion", "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://purl.org/dc/terms", "http://www.w3.org/2008/05/skos", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "es" : "Vocabulario para la representación de datos sobre subvenciones concedidas por un municipio"
+    },
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "version" : "Esta versión de la ontología de Subvenciones ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña, es una continuación de la ontología descrita en http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+    "author" : [ "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)", "Francisco Yedro (Ontology Engineering Group - Universidad Politécnica de Madrid)", "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" ],
+    "description" : {
+      "es" : "Este vocabulario se utiliza para la descripción de datos relacionados con subvenciones concedidas por un municipio. Esta ontología es una ampliación de la ontología http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"
+    },
+    "comments" : {
+      "es" : "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Francisco Yedro (Ontology Engineering Group - Universidad Politécnica de Madrid)",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "María Carmen Ruiz Moreno - Ayuntamiento de Madrid",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "María Jesús Gallego San Miguel - Ayuntamiento de Madrid",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Red.es",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "María del Mar Arribas de Andrés - Ayuntamiento de Madrid",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Víctor Morlán Plo - Ayuntamiento de Zaragoza",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Servicio de Informática - Ayuntamiento de Santiago de Compostela",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "essubv",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "es",
+        "value" : "Esta versión de la ontología de Subvenciones ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña, es una continuación de la ontología descrita en http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "Vocabulario para la representación de datos sobre subvenciones concedidas por un municipio",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "es",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://dbpedia.org/ontology/District",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "District"
+    },
+    "subClasses" : [ "32" ],
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/convenio",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Convenio",
+      "en" : "Agreement",
+      "es" : "Convenio"
+    },
+    "comment" : {
+      "en" : "Agreements with legal effects adopted by municipalities with public or private entities.",
+      "es" : "Acuerdos con efectos jurídicos adoptados por los ayuntamientos con entes públicos o privados."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "32" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "https://www.w3.org/ns/org#Organization",
+    "baseIri" : "https://www.w3.org/ns/org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/ns/org#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Organization",
+      "en" : "Organisation",
+      "es" : "Organización"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.geonames.org/ontology#Feature",
+    "baseIri" : "http://www.geonames.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Feature"
+    },
+    "subClasses" : [ "32" ],
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos#Concept",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2008/05/skos",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An abstract idea or notion; a unit of thought.",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-xx",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concept",
+      "en" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Subvencion",
+      "en" : "Grant",
+      "es" : "Subvención"
+    },
+    "comment" : {
+      "es" : "Esta clase representa el concepto principal de esta ontología, que es el de la subvención que concede un municipio a alguna organización"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2014-03-28",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Distrito",
+      "en" : "District",
+      "es" : "Distrito"
+    },
+    "comment" : {
+      "es" : "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "31", "63" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "37",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2008/05/skos",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A set of concepts, optionally including statements about semantic relationships between those concepts.",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-xx",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConceptScheme",
+      "en" : "Concept Scheme"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/programa-gasto",
+      "baseIri" : "http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto",
+      "labels" : {
+        "IRI-based" : "programa-gasto"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/economica-gasto",
+      "baseIri" : "http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto",
+      "labels" : {
+        "IRI-based" : "economica-gasto"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenios/tipo-entidad",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenios",
+      "labels" : {
+        "IRI-based" : "tipo-entidad"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion",
+      "labels" : {
+        "IRI-based" : "tematica-ayuntamiento"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento",
+      "baseIri" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion",
+      "labels" : {
+        "IRI-based" : "tipo-instrumento"
+      }
+    }, {
+      "iri" : "http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento",
+      "baseIri" : "http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio",
+      "labels" : {
+        "IRI-based" : "tipo-procedimiento"
+      }
+    } ],
+    "comment" : {
+      "en" : "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "15",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "66",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "18",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "46",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "47",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "51",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "56",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta",
+    "inverse" : "3",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "instrumenta",
+      "en" : "implement",
+      "es" : "instrumenta"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Convenio que es instrumentado por una subvención"
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "instrumentadoPor",
+      "en" : "implemented by",
+      "es" : "instrumentado por"
+    },
+    "domain" : "2",
+    "comment" : {
+      "es" : "Convenio que instrumenta una subvención"
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "importeSolicitado",
+      "en" : "amount requested",
+      "es" : "importe solicitado"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Importe que se requiere al solicitar la subvención."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fechaSolicitud",
+      "en" : "application date",
+      "es" : "fecha de solicitud"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Fecha en la que se solicita la subvención."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fechaAdjudicacion",
+      "en" : "award date",
+      "es" : "fecha de adjudicación"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Fecha en que se concede la subvención."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "beneficiario",
+      "en" : "beneficiary",
+      "es" : "beneficiario"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Propiedad que identifica al adjudicatario de una subvención. No se especifica su rango, pues puede ser una persona o una organización. Es posible que en el futuro se especifique un rango específico (por ejemplo, org:Organization de la W3C Organization Ontology)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://schema.org/name",
+    "baseIri" : "https://schema.org",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "project name",
+      "es" : "nombre de proyecto"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Nombre del proyecto al que está asociada la subvención"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://www.w3.org/ns/org#identifier",
+    "baseIri" : "https://www.w3.org/ns/org",
+    "range" : "16",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/ns/org#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifier",
+      "en" : "identifier",
+      "es" : "identificador"
+    },
+    "cardinality" : "1",
+    "domain" : "15",
+    "comment" : {
+      "es" : "Código o identificador de una subvención"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://www.w3.org/ns/org#classification",
+    "baseIri" : "https://www.w3.org/ns/org",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/ns/org#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "classification",
+      "en" : "classification",
+      "es" : "clasificación"
+    },
+    "domain" : "12",
+    "comment" : {
+      "es" : "Ordenación jerárquica que se hace de una organización dentro de un esquema de clasificación"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "objeto",
+      "en" : "object",
+      "es" : "objeto"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Finalidad de la subvencón."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "15",
+    "subproperty" : [ "23", "24" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "clasificacionPrograma",
+      "en" : "expense program classification",
+      "es" : "clasificación programa gasto"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "The credits will be arranged according to their purpose and the objectives that they intend to achieve, according to the classification by areas of expenditure, expenditure policies, groups of programs and programs. The latter may be developed in subprograms.",
+      "es" : "La clasificación por programa de gasto puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios grupos de programas o programas (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"
+    },
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fechaAcuerdo",
+      "en" : "agreement date",
+      "es" : "fecha de acuerdo"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Fecha de acuerdo de iniciación de la subvención."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "35",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "gestionadoPor",
+      "en" : "managed by",
+      "es" : "gestionado por"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Propiedad que indica la entidad que gestiona la subvención"
+    },
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tieneTematica",
+      "en" : "has thematic",
+      "es" : "tiene temática"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Temática asociada a una subvención"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2015-03-20",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "entidadFinanciadora",
+      "en" : "financing entity",
+      "es" : "entidad  financiadora"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "1",
+    "comment" : {
+      "es" : "Entidad que financia la subvención"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "23"
+  }, {
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "title",
+      "es" : "título"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Contiene el título de la subvención"
+    },
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2015-03-20",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "area",
+      "en" : "area",
+      "es" : "área"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Área del ayuntamiento que concede la subvención"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2015-03-20",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "entidadFinanciadora",
+      "en" : "financing entity",
+      "es" : "entidad  financiadora"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "1",
+    "comment" : {
+      "es" : "Entidad que financia la subvención"
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fechaAdjudicacion",
+      "en" : "award date",
+      "es" : "fecha de adjudicación"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Fecha en que se concede la subvención."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "beneficiario",
+      "en" : "beneficiary",
+      "es" : "beneficiario"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Propiedad que identifica al adjudicatario de una subvención. No se especifica su rango, pues puede ser una persona o una organización. Es posible que en el futuro se especifique un rango específico (por ejemplo, org:Organization de la W3C Organization Ontology)."
+    },
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name",
+      "es" : "nombre"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "A name for some thing.",
+      "es" : "Un nombre para alguna cosa"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "48",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "importeSolicitado",
+      "en" : "amount requested",
+      "es" : "importe solicitado"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Importe que se requiere al solicitar la subvención."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "52",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fechaAcuerdo",
+      "en" : "agreement date",
+      "es" : "fecha de acuerdo"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Fecha de acuerdo de iniciación de la subvención."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio",
+    "baseIri" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2015-03-20",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "servicio",
+      "en" : "service",
+      "es" : "servicio"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Servicio del ayuntamiento que ofrece la subvención"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://schema.org/name",
+    "baseIri" : "https://schema.org",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "project name",
+      "es" : "nombre de proyecto"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Nombre del proyecto al que está asociada la subvención"
+    },
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "objeto",
+      "en" : "object",
+      "es" : "objeto"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Finalidad de la subvencón."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "basesReguladoras",
+      "en" : "regulatory basis",
+      "es" : "bases reguladoras"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "es" : "Documento de gestión de la subvención que establece los criterios y regula la oncesión de la subvención."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "60",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "importeConcedido",
+      "en" : "ammount awarded",
+      "es" : "importe concedido"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Importe que se otorga una vez adjudicada la subvención."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "62",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fechaSolicitud",
+      "en" : "application date",
+      "es" : "fecha de solicitud"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Fecha en la que se solicita la subvención."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "clasificacionEconomicaGasto",
+      "en" : "expense economic classification",
+      "es" : "clasificación económica gasto"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "15",
+    "comment" : {
+      "en" : "The economic classification of the expenses will group the credits by chapters separating the current operations, those of capital and the financial ones.\nBased on their economic nature, the chapters will be broken down into articles, and these, in turn, into concepts, which can be subdivided into subconcepts. Subconcepts may be developed in budget items.",
+      "es" : "La clasificación económica puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios conceptos o subconceptos (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"
+    },
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "26",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "importeConcedido",
+      "en" : "ammount awarded",
+      "es" : "importe concedido"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Importe que se otorga una vez adjudicada la subvención."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos#inScheme",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "range" : "40",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2008/05/skos",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A concept scheme in which the concept is included.",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-xx",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inScheme",
+      "en" : "is in scheme"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "A concept may be a member of more than one concept scheme."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tipoInstrumento",
+      "en" : "type of tool",
+      "es" : "tipo de instrumento"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nominativa",
+      "en" : "nominative",
+      "es" : "nominativa"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Campo que indica si la subvención es nominativa, que es aquella cuyo objeto, dotación presupuestaria y beneficiario aparecen determinados expresamente en el estado de gastos del presupuesto."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "range" : "31",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento",
+    "baseIri" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-10-02",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tipoProcedimiento",
+      "en" : "type of procedure",
+      "es" : "tipo de procedimiento"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Tipo de procedimiento por el cual se realiza la subvención."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "70"
+  }, {
+    "range" : "63",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "title",
+      "es" : "título"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Contiene el título de la subvención"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "72"
+  } ]
+}
