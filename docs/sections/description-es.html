@@ -29,12 +29,28 @@ En la Figura 1 se pueden observar varias relaciones con la clase de conceptos SK
   essubv:tieneTematica "Promoción del Deporte"@es ;
   essubv:tipoInstrumento "Concurrencia Competitiva"@es ;
   essubv:beneficiario "G99023392"@es ;
-  essubv:importeConcedido 380 ;
-  essubv:fechaAdjudicacion "2014-04-30T00:00:00"^^xsd:dateTime ;
+  essubv:importeConcedido "380"^^xsd:float ;
+  essubv:fechaAdjudicacion "2014-04-30T00:00:00"^^xsd:dateTime .
 </pre>
 Como se observa en el ejemplo anterior. La subvención se enlaza con el beneficiario a través de su identificador. El siguiente ejemplo muestra la información de dicho beneficiario, la cual estaría compuesta por su identificador y por su nombre:
 <pre>
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/G99023392&gt; a org:Organization ;
   dct:identifier "G99023392"@es ;
   foaf:name "ASOCIACION CULTURAL DEPORTIVA CLUB BOMBA BASKET"@es .
+</pre>
+Ejemplo de instancia de [essubv:Subvencion](#Subvencion) que también contiene el nombre del proyecto [schema:name](#name)
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/Subvencion/31&gt; a essubv:Subvencion ;
+  dct:identifier "31"@es ;
+  dct:title "CERTAMEN ESCOLAR DE VILLANCICOS 2019"@es ;
+  schema:name "PREMIO MEJOR DIRECTOR EX AEQUO CAT B CERTAMEN VILLANCICOS 2019"@es ;
+  essubv:objeto "AYUDAS FAMILIARES INDEMNIZACIONES Y SIMILARES"@es ;
+  essubv:nominativa "false"^^xsd:boolean ;
+  essubv:importeConcedido "500"^^xsd:float ;
+  essubv:fechaAdjudicacion "2020-03-24T00:00:00"^^xsd:dateTime ;
+  essubv:beneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/X1111111X&gt; ;
+  essubv:gestionadoPor &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/180&gt; ;
+  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt; ;
+  essubv:tematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social&gt; ;
+  essubv:tipoInstrumento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento/subvenciones-previstas-nominativamente-en-el-presupuesto-general-del-ayuntamiento&gt; .
 </pre>
