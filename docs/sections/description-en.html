@@ -1,4 +1,76 @@
-<h2 id="desc" class="list">Vocabulario para la representación de datos sobre subvenciones concedidas por un municipio: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="desc" class="list">Vocabulary for the representation of grants awarded by a municipality: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+<span class="markdown">The following figure shows the class diagram of the ontology, where it can be seen that the core element is the class [essubv:Subvencion](http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion), defined in this vocabulary:</span>
+<center><img src="resources/images/modeloConceptual.png"><figcaption>Figura 1. - Vocabulary for the representation of grant.</figcaption></center>
 
+<span class="markdown">
+
+The diagram revolves around the core class [essubv:Subvencion](#Subvencion), which is the main class in this vocabulary. This class will be related to the class [org:Organization](#Organization) using:
+- [essubv:beneficiario](#beneficiario), which would be the awarded of a [essubv:Subvencion](#Subvencion), either a natural or legal person.
+- [essubv:entidadFinanciadora](#entidadFinanciadora), which would correspond to the [org:Organization](#Organization) that finances the [essubv:Subvencion](#Subvencion).
+- [essubv:area](#area), which would correspond to the [essubv:area](#area) that awards the [essubv:Subvencion](#Subvencion).
+- [essubv:servicio](#servicio), which would correspond to the [essubv:servicio](#servicio) of the city council that offers the [essubv:Subvencion](#Subvencion).
+- [essubv:gestionadoPor](#gestionadoPor), which would correspond to the [org:Organization](#Organization) that manages the [essubv:Subvencion](#Subvencion), which can be a government area or a [esadm:Distrito](#Distrito).
+
+Finally, the class [essubv:Subvencion](#Subvencion) can arrange a [esconv:Convenio](#Convenio) or be implemented by it.
+
+In addition, in this vocabulary several SKOS concept schemes have been used to represent:
+
+- Types of instrument
+- Types of procedure
+- Spending program classification
+- Economic classification of expenditure
+- Grant topics
+
+In Figure 1 several relationships with the SKOS concept class can be observed, however, the specific values have not been specified as they are different depending on the taxonomy they represent. For example, the property [essubv:tipoProcedimiento](#tipoProcedimiento) represents whether the grant is of type "direct-grant" or "concurrency".
+
+</span>
+
+<h3>Use cases<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
+<span class="markdown">
+
+  845/5000
+  In order to facilitate the understanding of the use of some classes and properties of this vocabulary, some examples will be provided below.
+
+  First, to represent a grant, an instance of the class[essubv:Subvencion](#Subvencion) is created with the properties [dct:identifier](http://purl.org/dc/terms/identifier) (grant identifier), [dct:title](http://purl.org/dc/terms/title) (grant title), [essubv:tieneTematica](#tieneTematica) (theme of the grant), [essubv:tipoInstrumento](#tipoInstrumento) (grant tool), [essubv:beneficiario](#beneficiario) (beneficiary of the grant), [essubv:importeConcedido](#importeConcedido) (final amount of the grant) y [essubv:fechaAdjudicacion](#fechaAdjudicacion) (grant award date).
+</span>
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/Subvencion/1418&gt; a essubv:Subvencion ;
+  dct:identifier "1418"@es ;
+  dct:title "AYUDAS ECONÓMICAS DE ZARAGOZA DEPORTE MUNICIPAL A ENTIDADES DEPORTIVAS DE BASE"@es ;
+  essubv:tieneTematica "Promoción del Deporte"@es ;
+  essubv:tipoProcedimiento "Concurrencia Competitiva"@es ;
+  essubv:beneficiario "G99023392"@es ;
+  essubv:importeConcedido "380"^^xsd:float ;
+  essubv:fechaAdjudicacion "2014-04-30T00:00:00"^^xsd:dateTime .
+</pre>
+
+<span class="markdown">
+As seen in the previous example. The grant is linked to the beneficiary through its identifier. The following example shows the information of the aforementioned beneficiary, which would be composed of their identifier and their name:
+</span>
+
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/G99023392&gt; a org:Organization ;
+  dct:identifier "G99023392"@es ;
+  foaf:name "ASOCIACION CULTURAL DEPORTIVA CLUB BOMBA BASKET"@es .
+</pre>
+
+<span class="markdown">
+Example of instance of [essubv:Subvencion](#Subvencion) that also contains the name of the project [schema:name](#name)
+</span>
+
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/Subvencion/31&gt; a essubv:Subvencion ;
+  dct:identifier "31"@es ;
+  dct:title "CERTAMEN ESCOLAR DE VILLANCICOS 2019"@es ;
+  schema:name "PREMIO MEJOR DIRECTOR EX AEQUO CAT B CERTAMEN VILLANCICOS 2019"@es ;
+  essubv:objeto "AYUDAS FAMILIARES INDEMNIZACIONES Y SIMILARES"@es ;
+  essubv:nominativa "false"^^xsd:boolean ;
+  essubv:importeConcedido "500"^^xsd:float ;
+  essubv:fechaAdjudicacion "2020-03-24T00:00:00"^^xsd:dateTime ;
+  essubv:beneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/X1111111X&gt; ;
+  essubv:gestionadoPor &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/180&gt; ;
+  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt; ;
+  essubv:tematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social&gt; ;
+  essubv:tipoInstrumento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento/subvenciones-previstas-nominativamente-en-el-presupuesto-general-del-ayuntamiento&gt; .
+</pre>
