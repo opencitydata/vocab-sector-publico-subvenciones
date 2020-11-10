@@ -314,6 +314,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
             </owl:Class>
         </rdfs:range>
         <terms:issued>2020-10-02</terms:issued>
+        <rdfs:comment xml:lang="es">Tipo de instrumento asociado a una subvención</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"/>
         <rdfs:label xml:lang="es">tipo de instrumento</rdfs:label>
         <rdfs:label xml:lang="en">type of tool</rdfs:label>
