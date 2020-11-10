@@ -20,7 +20,6 @@
         <dc:title xml:lang="es">Vocabulario para la representación de datos sobre subvenciones concedidas por un municipio</dc:title>
         <dc:contributor>María Jesús Gallego San Miguel - Ayuntamiento de Madrid</dc:contributor>
         <dc:description xml:lang="es">Este vocabulario se utiliza para la descripción de datos relacionados con subvenciones concedidas por un municipio. Esta ontología es una ampliación de la ontología http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion</dc:description>
-        <ns:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)</dc:creator>
         <dc:contributor>María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor>Servicio de Informática - Ayuntamiento de Santiago de Compostela</dc:contributor>
@@ -46,12 +45,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://creativecommons.org/ns#license -->
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 
@@ -100,6 +93,12 @@
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
