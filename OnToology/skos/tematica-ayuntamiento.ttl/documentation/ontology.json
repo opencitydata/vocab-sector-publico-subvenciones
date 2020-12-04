@@ -1,0 +1,274 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Francisco Yedro (Universidad Politécnica de Madrid)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-12-04"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "es",
+    "@value" : "Tesauro que recoge los tipos de temática que tienen los ayuntamientos a la hora de conceder subvenciones"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/comercio-turismo-y-pymes"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cooperacion-al-desarrollo"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cultura"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/deporte"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/educacion"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/empleo"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/justicia"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/sanidad"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/servicios-sociales-y-promocion-social"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/vivienda-y-urbanismo"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Temática Ayuntamiento"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa al asociacionismo y paricipación y a otras acuaciones de caracter económico"
+  }, {
+    "@value" : "asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/comercio-turismo-y-pymes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "comercio-turismo-y-pymes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa a comercio, turismo y PYMES"
+  }, {
+    "@value" : "comercio-turismo-y-pymes"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cooperacion-al-desarrollo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "cooperacion-al-desarrollo"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa a la cooperación al desarrollo"
+  }, {
+    "@value" : "cooperacion-al-desarrollo"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cultura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "cultura"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa a la cultura"
+  }, {
+    "@value" : "cultura"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/deporte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "deporte"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa al deporte y su promoción"
+  }, {
+    "@value" : "deporte"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/educacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "educacion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa a la educación"
+  }, {
+    "@value" : "educacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/empleo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "empleo"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa al empleo y su fomento"
+  }, {
+    "@value" : "empleo"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "investigacion-desarrollo-e-innovacion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa a la investigación, desarrollo e innovación"
+  }, {
+    "@value" : "investigacion-desarrollo-e-innovacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/justicia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "justicia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa a la justicia"
+  }, {
+    "@value" : "justicia"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "medio-ambiente-y-sostenibilidad"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa al medio ambiente y sostenibilidad"
+  }, {
+    "@value" : "medio-ambiente-y-sostenibilidad"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/sanidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "sanidad"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa a la sanidad"
+  }, {
+    "@value" : "sanidad"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/servicios-sociales-y-promocion-social",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "servicios-sociales-y-promocion-social"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa a los servicios sociales y promoción social"
+  }, {
+    "@value" : "servicios-sociales-y-promocion-social"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/vivienda-y-urbanismo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "vivienda-y-urbanismo"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Subvenciones con temática relativa a vivienda y urbanismo"
+  }, {
+    "@value" : "vivienda-y-urbanismo"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

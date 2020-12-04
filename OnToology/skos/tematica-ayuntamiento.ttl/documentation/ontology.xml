@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <dc:creator>Francisco Yedro (Universidad Politécnica de Madrid)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-04</dc:date>
+        <dc:title xml:lang="es">Tesauro que recoge los tipos de temática que tienen los ayuntamientos a la hora de conceder subvenciones</dc:title>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/comercio-turismo-y-pymes"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cooperacion-al-desarrollo"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cultura"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/deporte"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/educacion"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/empleo"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/justicia"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/sanidad"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/servicios-sociales-y-promocion-social"/>
+        <skos:hasTopConcept rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/vivienda-y-urbanismo"/>
+        <skos:prefLabel xml:lang="es">Temática Ayuntamiento</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa al asociacionismo y paricipación y a otras acuaciones de caracter económico</skos:prefLabel>
+        <skos:prefLabel>asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/comercio-turismo-y-pymes -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/comercio-turismo-y-pymes">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>comercio-turismo-y-pymes</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa a comercio, turismo y PYMES</skos:prefLabel>
+        <skos:prefLabel>comercio-turismo-y-pymes</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cooperacion-al-desarrollo -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cooperacion-al-desarrollo">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>cooperacion-al-desarrollo</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa a la cooperación al desarrollo</skos:prefLabel>
+        <skos:prefLabel>cooperacion-al-desarrollo</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cultura -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cultura">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>cultura</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa a la cultura</skos:prefLabel>
+        <skos:prefLabel>cultura</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/deporte -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/deporte">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>deporte</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa al deporte y su promoción</skos:prefLabel>
+        <skos:prefLabel>deporte</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/educacion -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/educacion">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>educacion</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa a la educación</skos:prefLabel>
+        <skos:prefLabel>educacion</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/empleo -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/empleo">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>empleo</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa al empleo y su fomento</skos:prefLabel>
+        <skos:prefLabel>empleo</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>investigacion-desarrollo-e-innovacion</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa a la investigación, desarrollo e innovación</skos:prefLabel>
+        <skos:prefLabel>investigacion-desarrollo-e-innovacion</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/justicia -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/justicia">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>justicia</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa a la justicia</skos:prefLabel>
+        <skos:prefLabel>justicia</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>medio-ambiente-y-sostenibilidad</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa al medio ambiente y sostenibilidad</skos:prefLabel>
+        <skos:prefLabel>medio-ambiente-y-sostenibilidad</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/sanidad -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/sanidad">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>sanidad</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa a la sanidad</skos:prefLabel>
+        <skos:prefLabel>sanidad</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/servicios-sociales-y-promocion-social -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/servicios-sociales-y-promocion-social">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>servicios-sociales-y-promocion-social</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa a los servicios sociales y promoción social</skos:prefLabel>
+        <skos:prefLabel>servicios-sociales-y-promocion-social</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/vivienda-y-urbanismo -->
+
+
+    <NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/vivienda-y-urbanismo">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento"/>
+        <skos:notation>vivienda-y-urbanismo</skos:notation>
+        <skos:prefLabel xml:lang="es">Subvenciones con temática relativa a vivienda y urbanismo</skos:prefLabel>
+        <skos:prefLabel>vivienda-y-urbanismo</skos:prefLabel>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+
