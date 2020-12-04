@@ -1,0 +1,185 @@
+{
+  "@context" : {
+    "tipoProcedimiento" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento",
+      "@type" : "@id"
+    },
+    "tieneSubvencion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneSubvencion",
+      "@type" : "@id"
+    },
+    "instrumentadoPor" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor",
+      "@type" : "@id"
+    },
+    "nominativa" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "basesReguladoras" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Convenio" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio"
+    },
+    "tipoInstrumento" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento",
+      "@type" : "@id"
+    },
+    "entidadFinanciadora" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Organization" : {
+      "@id" : "https://www.w3.org/ns/org#Organization"
+    },
+    "importeTotalConcedido" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "tieneBeneficiario" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario",
+      "@type" : "@id"
+    },
+    "servicio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio",
+      "@type" : "@id"
+    },
+    "area" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area",
+      "@type" : "@id"
+    },
+    "District" : {
+      "@id" : "http://dbpedia.org/ontology/District"
+    },
+    "Subvencion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    },
+    "fechaSolicitud" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "Feature" : {
+      "@id" : "http://www.geonames.org/ontology#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "gestionadoPor" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2008/05/skos#Concept"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "tieneTematica" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica",
+      "@type" : "@id"
+    },
+    "Distrito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+    },
+    "identifier" : {
+      "@id" : "https://www.w3.org/ns/org#identifier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "fechaAdjudicacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "importeSolicitado" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2008/05/skos#ConceptScheme"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "importeAdjudicado" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeAdjudicado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "clasificacionEconomicaGasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto",
+      "@type" : "@id"
+    },
+    "instrumenta" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "fechaAcuerdo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "clasificacionPrograma" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2008/05/skos#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "AsignacionBeneficiarioSubvencion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion"
+    },
+    "classification" : {
+      "@id" : "https://www.w3.org/ns/org#classification",
+      "@type" : "@id"
+    },
+    "objeto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
