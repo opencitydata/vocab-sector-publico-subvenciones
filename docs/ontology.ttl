@@ -7,7 +7,6 @@
 @base <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
 
 <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> rdf:type owl:Ontology ;
-                                                                  <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> ;
                                                                   <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid" ,
                                                                                                                 "María Carmen Ruiz Moreno - Ayuntamiento de Madrid" ,
                                                                                                                 "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza" ,
@@ -20,9 +19,11 @@
                                                                   <http://purl.org/dc/elements/1.1/creator> "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
                                                                                                             "Francisco Yedro (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
                                                                                                             "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)" ;
-                                                                  <http://purl.org/dc/elements/1.1/description> "Este vocabulario se utiliza para la descripción de datos relacionados con subvenciones concedidas por un municipio. Esta ontología es una ampliación de la ontología http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"@es ;
+                                                                  <http://purl.org/dc/elements/1.1/description> "Este vocabulario se utiliza para la descripción de datos relacionados con subvenciones concedidas por un municipio. Esta ontología es una ampliación de la ontología http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"@es ,
+                                                                                                                "This vocabulary is used to describe data related to grants awarded by a municipality. This ontology is an extension of the ontology http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"@en ;
                                                                   <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
-                                                                  <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre subvenciones concedidas por un municipio"@es ;
+                                                                  <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre subvenciones concedidas por un municipio"@es ,
+                                                                                                          "Vocabulary for the representation of data on grants awarded by a municipality"@en ;
                                                                   <http://purl.org/dc/terms/issued> "2020-10-02"@es ;
                                                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "essubv" ;
                                                                   <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
@@ -32,10 +33,6 @@
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
-
 
 ###  http://purl.org/dc/elements/1.1/contributor
 <http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
@@ -69,16 +66,16 @@
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#definition
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#definition> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#comment
@@ -91,6 +88,10 @@ rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2000/01/rdf-schema#label
 rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -188,6 +189,18 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
                              "instrumentado por"@es .
 
 
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneSubvencion
+:tieneSubvencion rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :AsignacionBeneficiarioSubvencion ;
+                 rdfs:range :Subvencion ;
+                 <http://purl.org/dc/terms/issued> "2020-11-30" ;
+                 rdfs:comment "Propiedad que identifica la subvención de una asignación."@en ;
+                 rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion> ;
+                 rdfs:label "has grant"@en ,
+                            "tiene subvención"@es .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica
 :tieneTematica rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
@@ -219,6 +232,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
                               rdf:type owl:Class
                             ] ;
                  <http://purl.org/dc/terms/issued> "2020-10-02" ;
+                 rdfs:comment "Tipo de instrumento asociado a una subvención"@es ;
                  rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> ;
                  rdfs:label "tipo de instrumento"@es ,
                             "type of tool"@en .
@@ -254,17 +268,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
                                                                                          "área"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> rdf:type owl:ObjectProperty ;
-                                                                                      rdfs:domain :Subvencion ;
-                                                                                      rdfs:range <https://www.w3.org/ns/org#Organization> ;
-                                                                                      <http://purl.org/dc/terms/issued> "2020-10-02"^^xsd:date ;
-                                                                                      rdfs:comment "Propiedad que identifica al adjudicatario de una subvención. No se especifica su rango, pues puede ser una persona o una organización. Es posible que en el futuro se especifique un rango específico (por ejemplo, org:Organization de la W3C Organization Ontology)."@es ;
-                                                                                      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion> ;
-                                                                                      rdfs:label "beneficiario"@es ,
-                                                                                                 "beneficiary"@en .
-
-
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> rdf:type owl:ObjectProperty ;
                                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
@@ -288,14 +291,26 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
                                                                                              "servicio"@es .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario> rdf:type owl:ObjectProperty ,
+                                                                                                    owl:FunctionalProperty ;
+                                                                                           rdfs:domain :AsignacionBeneficiarioSubvencion ;
+                                                                                           rdfs:range :Subvencion ;
+                                                                                           <http://purl.org/dc/terms/issued> "2020-10-02"^^xsd:date ;
+                                                                                           rdfs:comment "Propiedad que identifica al adjudicatario de una subvención. No se especifica su rango, pues puede ser una persona o una organización. Es posible que en el futuro se especifique un rango específico (por ejemplo, org:Organization de la W3C Organization Ontology)."@es ;
+                                                                                           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion> ;
+                                                                                           rdfs:label "has beneficiary"@en ,
+                                                                                                      "tiene beneficiario"@es .
+
+
 ###  http://www.w3.org/2008/05/skos#inScheme
 <http://www.w3.org/2008/05/skos#inScheme> rdf:type owl:ObjectProperty ;
                                           rdfs:range <http://www.w3.org/2008/05/skos#ConceptScheme> ;
                                           <http://purl.org/dc/terms/issued> "2008-05-xx" ;
-                                          <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#definition> "A concept scheme in which the concept is included."@en ;
                                           rdfs:comment "A concept may be a member of more than one concept scheme."@en ;
                                           rdfs:isDefinedBy <http://www.w3.org/2008/05/skos> ;
-                                          rdfs:label "is in scheme"@en .
+                                          rdfs:label "is in scheme"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A concept scheme in which the concept is included."@en .
 
 
 ###  https://www.w3.org/ns/org#classification
@@ -329,14 +344,15 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras
-:basesReguladoras rdf:type owl:DatatypeProperty ;
+:basesReguladoras rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
                   rdfs:domain :Subvencion ;
                   rdfs:range xsd:anyURI ;
                   <http://purl.org/dc/terms/issued> "2020-10-02" ;
                   rdfs:comment "Documento de gestión de la subvención que establece los criterios y regula la oncesión de la subvención."@es ;
                   rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> ;
                   rdfs:label "bases reguladoras"@es ,
-                             "regulatory basis"@en .
+                             "regulatory base"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo
@@ -352,7 +368,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion
 :fechaAdjudicacion rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Subvencion ;
+                   rdfs:domain :AsignacionBeneficiarioSubvencion ;
                    rdfs:range xsd:date ;
                    <http://purl.org/dc/terms/issued> "2020-10-02" ;
                    rdfs:comment "Fecha en que se concede la subvención."@es ;
@@ -363,7 +379,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud
 :fechaSolicitud rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Subvencion ;
+                rdfs:domain :AsignacionBeneficiarioSubvencion ;
                 rdfs:range xsd:date ;
                 <http://purl.org/dc/terms/issued> "2020-10-02" ;
                 rdfs:comment "Fecha en la que se solicita la subvención."@es ;
@@ -372,26 +388,37 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
                            "fecha de solicitud"@es .
 
 
-###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido
-:importeConcedido rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Subvencion ;
-                  rdfs:range xsd:float ;
-                  <http://purl.org/dc/terms/issued> "2020-10-02" ;
-                  rdfs:comment "Importe que se otorga una vez adjudicada la subvención."@es ;
-                  rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> ;
-                  rdfs:label "ammount awarded"@en ,
-                             "importe concedido"@es .
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeAdjudicado
+:importeAdjudicado rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :AsignacionBeneficiarioSubvencion ;
+                   rdfs:range xsd:float ;
+                   <http://purl.org/dc/terms/issued> "2020-11-30" ;
+                   rdfs:comment "Importe de subvención concedido a una organización"@es ;
+                   rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> ;
+                   rdfs:label "ammount awarded"@en ,
+                              "importe adjudicado"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado
 :importeSolicitado rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Subvencion ;
+                   rdfs:domain :AsignacionBeneficiarioSubvencion ;
                    rdfs:range xsd:float ;
                    <http://purl.org/dc/terms/issued> "2020-10-02" ;
                    rdfs:comment "Importe que se requiere al solicitar la subvención."@es ;
                    rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> ;
                    rdfs:label "amount requested"@en ,
                               "importe solicitado"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido
+:importeTotalConcedido rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Subvencion ;
+                       rdfs:range xsd:float ;
+                       <http://purl.org/dc/terms/issued> "2020-10-02" ;
+                       rdfs:comment "Importe total de la subvención."@es ;
+                       rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> ;
+                       rdfs:label "importe total concedido"@es ,
+                                  "total ammount awarded"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa
@@ -418,6 +445,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 
 ###  http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ;
+                                 owl:equivalentProperty <https://schema.org/name> ;
                                  rdfs:range xsd:string ;
                                  rdfs:comment "A name for some thing."@en ,
                                               "Un nombre para alguna cosa"@es ;
@@ -436,7 +464,8 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 
 
 ###  https://www.w3.org/ns/org#identifier
-<https://www.w3.org/ns/org#identifier> rdf:type owl:DatatypeProperty ;
+<https://www.w3.org/ns/org#identifier> rdf:type owl:DatatypeProperty ,
+                                                owl:FunctionalProperty ;
                                        rdfs:range xsd:string ;
                                        rdfs:comment "Código o identificador de una subvención"@es ;
                                        rdfs:isDefinedBy "https://www.w3.org/ns/org#" ;
@@ -452,8 +481,22 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 <http://dbpedia.org/ontology/District> rdf:type owl:Class .
 
 
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion
+:AsignacionBeneficiarioSubvencion rdf:type owl:Class ;
+                                  <http://purl.org/dc/terms/issued> "2020-12-04" ;
+                                  rdfs:comment "Clase para almacenar los datos propios de la relación de una Subvención y su correspondiente Organización"@es ,
+                                               "Class to store the data of the relationship of a Grant and its corresponding Organisation"@en ;
+                                  rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> ;
+                                  rdfs:label "AsignaciónBeneficiarioSubvención"@es ,
+                                             "GrantBeneficiaryAllocation"@en .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio
 :Convenio rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :instrumentadoPor ;
+                            owl:allValuesFrom :Subvencion
+                          ] ;
           rdfs:comment "Acuerdos con efectos jurídicos adoptados por los ayuntamientos con entes públicos o privados."@es ,
                        "Agreements with legal effects adopted by municipalities with public or private entities."@en ;
           rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/convenio" ;
@@ -464,6 +507,18 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion
 :Subvencion rdf:type owl:Class ;
             rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :instrumenta ;
+                                                     owl:allValuesFrom :Convenio
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass :Convenio
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ,
+                            [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                      owl:onProperty :tieneTematica ;
                                                      owl:allValuesFrom <http://www.w3.org/2008/05/skos#Concept>
                                                    ]
@@ -501,6 +556,18 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
                             ] ,
                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                      owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> ;
+                                                     owl:allValuesFrom <https://www.w3.org/ns/org#Organization>
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <https://www.w3.org/ns/org#Organization>
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ,
+                            [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> ;
                                                      owl:allValuesFrom <https://www.w3.org/ns/org#Organization>
                                                    ]
                                                    [ rdf:type owl:Restriction ;
@@ -533,66 +600,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
                                               owl:allValuesFrom <https://www.w3.org/ns/org#Organization>
                                             ]
                                           )
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> ;
-                              owl:someValuesFrom <https://www.w3.org/ns/org#Organization>
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> ;
-                              owl:allValuesFrom <https://www.w3.org/ns/org#Organization>
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass <http://www.w3.org/2008/05/skos#Concept>
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass <http://www.w3.org/2008/05/skos#Concept>
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://purl.org/dc/terms/title> ;
-                              owl:allValuesFrom xsd:string
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :fechaAcuerdo ;
-                              owl:allValuesFrom xsd:date
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :fechaAdjudicacion ;
-                              owl:allValuesFrom xsd:date
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :fechaSolicitud ;
-                              owl:allValuesFrom xsd:date
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :importeConcedido ;
-                              owl:allValuesFrom xsd:float
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :importeSolicitado ;
-                              owl:allValuesFrom xsd:float
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :objeto ;
-                              owl:allValuesFrom xsd:string
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <https://schema.org/name> ;
-                              owl:allValuesFrom xsd:string
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :basesReguladoras ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:anyURI
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <https://www.w3.org/ns/org#identifier> ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:string
                             ] ;
             <http://purl.org/dc/terms/issued> "2020-10-02" ;
             rdfs:comment "Esta clase representa el concepto principal de esta ontología, que es el de la subvención que concede un municipio a alguna organización"@es ;
@@ -620,19 +627,19 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 <http://www.w3.org/2008/05/skos#Concept> rdf:type owl:Class ;
                                          owl:disjointWith <http://www.w3.org/2008/05/skos#ConceptScheme> ;
                                          <http://purl.org/dc/terms/issued> "2008-05-xx" ;
-                                         <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#definition> "An abstract idea or notion; a unit of thought."@en ;
                                          rdfs:isDefinedBy <http://www.w3.org/2008/05/skos> ;
-                                         rdfs:label "Concept"@en .
+                                         rdfs:label "Concept"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
 
 
 ###  http://www.w3.org/2008/05/skos#ConceptScheme
 <http://www.w3.org/2008/05/skos#ConceptScheme> rdf:type owl:Class ;
                                                <http://purl.org/dc/terms/issued> "2008-05-xx" ;
-                                               <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en ;
                                                rdfs:comment "A concept scheme may be defined to include concepts from different sources."@en ,
                                                             "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en ;
                                                rdfs:isDefinedBy <http://www.w3.org/2008/05/skos> ;
-                                               rdfs:label "Concept Scheme"@en .
+                                               rdfs:label "Concept Scheme"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
 
 
 ###  https://www.w3.org/ns/org#Organization
