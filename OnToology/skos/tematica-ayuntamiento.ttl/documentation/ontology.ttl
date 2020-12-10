@@ -1,0 +1,206 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> rdf:type owl:NamedIndividual ,
+                                                                                                        <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                                                               <http://purl.org/dc/elements/1.1/creator> "Francisco Yedro (Universidad Politécnica de Madrid)" ;
+                                                                                               <http://purl.org/dc/elements/1.1/date> "2020-12-04"^^xsd:date ;
+                                                                                               <http://purl.org/dc/elements/1.1/title> "Tesauro que recoge los tipos de temática que tienen los ayuntamientos a la hora de conceder subvenciones"@es ;
+                                                                                               <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/comercio-turismo-y-pymes> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cooperacion-al-desarrollo> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cultura> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/educacion> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/empleo> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/justicia> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/sanidad> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social> ,
+                                                                                                                                                   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/vivienda-y-urbanismo> ;
+                                                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Temática Ayuntamiento"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                               <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                                                                                      <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                                                                                      <http://www.w3.org/2004/02/skos/core#notation> "asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico" ;
+                                                                                                                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa al asociacionismo y paricipación y a otras acuaciones de caracter económico"@es ,
+                                                                                                                                                                                                                      "asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/comercio-turismo-y-pymes
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/comercio-turismo-y-pymes> rdf:type owl:NamedIndividual ,
+                                                                                                                                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                                        <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                                        <http://www.w3.org/2004/02/skos/core#notation> "comercio-turismo-y-pymes" ;
+                                                                                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa a comercio, turismo y PYMES"@es ,
+                                                                                                                                                                        "comercio-turismo-y-pymes" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cooperacion-al-desarrollo
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cooperacion-al-desarrollo> rdf:type owl:NamedIndividual ,
+                                                                                                                                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                                         <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                                         <http://www.w3.org/2004/02/skos/core#notation> "cooperacion-al-desarrollo" ;
+                                                                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa a la cooperación al desarrollo"@es ,
+                                                                                                                                                                         "cooperacion-al-desarrollo" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cultura
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cultura> rdf:type owl:NamedIndividual ,
+                                                                                                                <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                       <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                       <http://www.w3.org/2004/02/skos/core#notation> "cultura" ;
+                                                                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa a la cultura"@es ,
+                                                                                                                                                       "cultura" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte> rdf:type owl:NamedIndividual ,
+                                                                                                                <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                       <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                       <http://www.w3.org/2004/02/skos/core#notation> "deporte" ;
+                                                                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa al deporte y su promoción"@es ,
+                                                                                                                                                       "deporte" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/educacion
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/educacion> rdf:type owl:NamedIndividual ,
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                         <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                         <http://www.w3.org/2004/02/skos/core#notation> "educacion" ;
+                                                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa a la educación"@es ,
+                                                                                                                                                         "educacion" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/empleo
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/empleo> rdf:type owl:NamedIndividual ,
+                                                                                                               <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                      <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                      <http://www.w3.org/2004/02/skos/core#notation> "empleo" ;
+                                                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa al empleo y su fomento"@es ,
+                                                                                                                                                      "empleo" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion> rdf:type owl:NamedIndividual ,
+                                                                                                                                              <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                                                     <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                                                     <http://www.w3.org/2004/02/skos/core#notation> "investigacion-desarrollo-e-innovacion" ;
+                                                                                                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa a la investigación, desarrollo e innovación"@es ,
+                                                                                                                                                                                     "investigacion-desarrollo-e-innovacion" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/justicia
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/justicia> rdf:type owl:NamedIndividual ,
+                                                                                                                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#notation> "justicia" ;
+                                                                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa a la justicia"@es ,
+                                                                                                                                                        "justicia" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad> rdf:type owl:NamedIndividual ,
+                                                                                                                                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                                               <http://www.w3.org/2004/02/skos/core#notation> "medio-ambiente-y-sostenibilidad" ;
+                                                                                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa al medio ambiente y sostenibilidad"@es ,
+                                                                                                                                                                               "medio-ambiente-y-sostenibilidad" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/sanidad
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/sanidad> rdf:type owl:NamedIndividual ,
+                                                                                                                <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                       <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                       <http://www.w3.org/2004/02/skos/core#notation> "sanidad" ;
+                                                                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa a la sanidad"@es ,
+                                                                                                                                                       "sanidad" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social> rdf:type owl:NamedIndividual ,
+                                                                                                                                              <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                                                     <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                                                     <http://www.w3.org/2004/02/skos/core#notation> "servicios-sociales-y-promocion-social" ;
+                                                                                                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa a los servicios sociales y promoción social"@es ,
+                                                                                                                                                                                     "servicios-sociales-y-promocion-social" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/vivienda-y-urbanismo
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/vivienda-y-urbanismo> rdf:type owl:NamedIndividual ,
+                                                                                                                             <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                                    <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+                                                                                                                    <http://www.w3.org/2004/02/skos/core#notation> "vivienda-y-urbanismo" ;
+                                                                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Subvenciones con temática relativa a vivienda y urbanismo"@es ,
+                                                                                                                                                                    "vivienda-y-urbanismo" .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
