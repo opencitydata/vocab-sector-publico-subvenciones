@@ -2,99 +2,99 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> a skos:ConceptScheme;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/vivienda-y-urbanismo> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/comercio-turismo-y-pymes> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cooperacion-al-desarrollo> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cultura> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/educacion> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/empleo> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/justicia> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/sanidad> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/servicios-sociales-y-promocion-social> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/deporte> ;
-    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> a skos:ConceptScheme;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/vivienda-y-urbanismo> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/comercio-turismo-y-pymes> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cooperacion-al-desarrollo> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cultura> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/educacion> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/empleo> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/justicia> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/sanidad> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad> ;
     dc:creator "Francisco Yedro (Universidad Politécnica de Madrid)" ;
     dc:date "2020-12-04"^^xsd:date ;
     skos:prefLabel "Temática Ayuntamiento"@es ;
     dc:title "Tesauro que recoge los tipos de temática que tienen los ayuntamientos a la hora de conceder subvenciones"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/vivienda-y-urbanismo> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/vivienda-y-urbanismo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "vivienda-y-urbanismo" ;
 	skos:prefLabel "vivienda-y-urbanismo" ;
   skos:prefLabel "Subvenciones con temática relativa a vivienda y urbanismo"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/comercio-turismo-y-pymes> a skos:Concept ;
-  skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/comercio-turismo-y-pymes> a skos:Concept ;
+  skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "comercio-turismo-y-pymes" ;
   skos:prefLabel "comercio-turismo-y-pymes" ;
   skos:prefLabel "Subvenciones con temática relativa a comercio, turismo y PYMES"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cooperacion-al-desarrollo> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cooperacion-al-desarrollo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "cooperacion-al-desarrollo" ;
 	skos:prefLabel "cooperacion-al-desarrollo" ;
   skos:prefLabel "Subvenciones con temática relativa a la cooperación al desarrollo"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/cultura> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cultura> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "cultura" ;
 	skos:prefLabel "cultura" ;
   skos:prefLabel "Subvenciones con temática relativa a la cultura"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/educacion> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/educacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "educacion" ;
 	skos:prefLabel "educacion" ;
   skos:prefLabel "Subvenciones con temática relativa a la educación"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/empleo> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/empleo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "empleo" ;
 	skos:prefLabel "empleo" ;
   skos:prefLabel "Subvenciones con temática relativa al empleo y su fomento"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "investigacion-desarrollo-e-innovacion" ;
 	skos:prefLabel "investigacion-desarrollo-e-innovacion" ;
   skos:prefLabel "Subvenciones con temática relativa a la investigación, desarrollo e innovación"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/justicia> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/justicia> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "justicia" ;
 	skos:prefLabel "justicia" ;
   skos:prefLabel "Subvenciones con temática relativa a la justicia"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico" ;
 	skos:prefLabel "asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico" ;
   skos:prefLabel "Subvenciones con temática relativa al asociacionismo y paricipación y a otras acuaciones de caracter económico"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/sanidad> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/sanidad> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "sanidad" ;
 	skos:prefLabel "sanidad" ;
   skos:prefLabel "Subvenciones con temática relativa a la sanidad"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/servicios-sociales-y-promocion-social> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "servicios-sociales-y-promocion-social" ;
 	skos:prefLabel "servicios-sociales-y-promocion-social" ;
   skos:prefLabel "Subvenciones con temática relativa a los servicios sociales y promoción social"@es .
 
-<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/deporte> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "deporte" ;
 	skos:prefLabel "deporte" ;
   skos:prefLabel "Subvenciones con temática relativa al deporte y su promoción"@es .
 
-  <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad> a skos:Concept ;
-  	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/contaminacion-acustica/tematica-ayuntamiento> ;
+  <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad> a skos:Concept ;
+  	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
     skos:notation "medio-ambiente-y-sostenibilidad" ;
   	skos:prefLabel "medio-ambiente-y-sostenibilidad" ;
     skos:prefLabel "Subvenciones con temática relativa al medio ambiente y sostenibilidad"@es .
