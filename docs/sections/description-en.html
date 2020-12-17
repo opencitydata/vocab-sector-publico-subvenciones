@@ -57,18 +57,30 @@ Example of instance of [essubv:Subvencion](#Subvencion) that also contains the n
 </span>
 
 <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/Subvencion/31&gt; a essubv:Subvencion ;
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/subvencion/31&gt; a essubv:Subvencion ;
   dct:identifier "31"@es ;
   dct:title "CERTAMEN ESCOLAR DE VILLANCICOS 2019"@es ;
   schema:name "PREMIO MEJOR DIRECTOR EX AEQUO CAT B CERTAMEN VILLANCICOS 2019"@es ;
   essubv:objeto "AYUDAS FAMILIARES INDEMNIZACIONES Y SIMILARES"@es ;
   essubv:nominativa "false"^^xsd:boolean ;
-  essubv:importeConcedido "500"^^xsd:float ;
-  essubv:fechaAdjudicacion "2020-03-24T00:00:00"^^xsd:dateTime ;
-  essubv:beneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/X1111111X&gt; ;
+  essubv:importeTotalConcedido "50000"^^xsd:float ;
   essubv:gestionadoPor &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/180&gt; ;
-  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt; ;
+  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt; ;
   essubv:tieneTematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social&gt; ;
-  essubv:clasificacionPrograma &lt;http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23&gt; ;
+  essubv:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23&gt; ;
   essubv:tipoInstrumento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento/subvenciones-previstas-nominativamente-en-el-presupuesto-general-del-ayuntamiento&gt; .
+</pre>
+
+<span class="markdown">
+Example of instance of [essubv:AsignacionBeneficiarioSubvencion](#AsignacionBeneficiarioSubvencion) in which a [essubv:Subvencion](#Subvencion) is related to [essubv:tieneBeneficiario](#tieneBeneficiario)
+</span>
+
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/asignacionbeneficiariosubvencion/31&gt; a essubv:Subvencion ;
+  essubv:tieneBeneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/X1111111X&gt; ;
+  essubv:tieneSubvencion &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/subvencion/31&gt; ;
+  essubv:importeSolicitado "500"^^xsd:float ;
+  essubv:importeAdjudicado "500"^^xsd:float ;
+  essubv:fechaSoliitud "2020-02-12T00:00:00"^^xsd:dateTime ;
+  essubv:fechaAdjudicacion "2020-03-24T00:00:00"^^xsd:dateTime .
 </pre>
