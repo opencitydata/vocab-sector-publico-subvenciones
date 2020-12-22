@@ -32,7 +32,7 @@ En la Figura 1 se pueden observar varias relaciones con la clase de conceptos SK
   En primer lugar, para la representación de una subvención, se crea una instancia de la clase [essubv:Subvencion](#Subvencion) con las propiedades [dct:identifier](http://purl.org/dc/terms/identifier) (identificador de la subvención), [dct:title](http://purl.org/dc/terms/title) (título de la subvención), [essubv:tieneTematica](#tieneTematica) (temática de la subvención), [essubv:tipoInstrumento](#tipoInstrumento) (instrumento de la subvención), [essubv:beneficiario](#beneficiario) (beneficiario de la subvención), [essubv:importeConcedido](#importeConcedido) (importe final de la subvención) y [essubv:fechaAdjudicacion](#fechaAdjudicacion) (fecha de adjudicación de la subvención).
 </span>
 <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/Subvencion/1418&gt; a essubv:Subvencion ;
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/1418&gt; a essubv:Subvencion ;
   dct:identifier "1418"@es ;
   dct:title "AYUDAS ECONÓMICAS DE ZARAGOZA DEPORTE MUNICIPAL A ENTIDADES DEPORTIVAS DE BASE"@es ;
   essubv:tieneTematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte&gt; ;
@@ -57,7 +57,7 @@ Ejemplo de instancia de [essubv:Subvencion](#Subvencion) que también contiene e
 </span>
 
 <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/subvencion/31&gt; a essubv:Subvencion ;
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/31&gt; a essubv:Subvencion ;
   dct:identifier "31"@es ;
   dct:title "CERTAMEN ESCOLAR DE VILLANCICOS 2019"@es ;
   schema:name "PREMIO MEJOR DIRECTOR EX AEQUO CAT B CERTAMEN VILLANCICOS 2019"@es ;
@@ -78,7 +78,7 @@ Ejemplo de instancia de [essubv:AsignacionBeneficiarioSubvencion](#AsignacionBen
 <pre>
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/asignacionbeneficiariosubvencion/31-X1111111X&gt; a essubv:AsignacionBeneficiarioSubvencion ;
   essubv:tieneBeneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/X1111111X&gt; ;
-  essubv:tieneSubvencion &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/subvencion/31&gt; ;
+  essubv:tieneSubvencion &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/31&gt; ;
   essubv:importeSolicitado "500"^^xsd:float ;
   essubv:importeAdjudicado "500"^^xsd:float ;
   essubv:fechaSolicitud "2020-02-12T00:00:00"^^xsd:dateTime ;

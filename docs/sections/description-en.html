@@ -32,7 +32,7 @@ In Figure 1 several relationships with the SKOS concept class can be observed, h
   First, to represent a grant, an instance of the class[essubv:Subvencion](#Subvencion) is created with the properties [dct:identifier](http://purl.org/dc/terms/identifier) (grant identifier), [dct:title](http://purl.org/dc/terms/title) (grant title), [essubv:tieneTematica](#tieneTematica) (theme of the grant), [essubv:tipoInstrumento](#tipoInstrumento) (grant tool), [essubv:beneficiario](#beneficiario) (beneficiary of the grant), [essubv:importeConcedido](#importeConcedido) (final amount of the grant) y [essubv:fechaAdjudicacion](#fechaAdjudicacion) (grant award date).
 </span>
 <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/Subvencion/1418&gt; a essubv:Subvencion ;
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/1418&gt; a essubv:Subvencion ;
   dct:identifier "1418"@es ;
   dct:title "AYUDAS ECONÓMICAS DE ZARAGOZA DEPORTE MUNICIPAL A ENTIDADES DEPORTIVAS DE BASE"@es ;
   essubv:tieneTematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte&gt; ;
@@ -57,7 +57,7 @@ Example of instance of [essubv:Subvencion](#Subvencion) that also contains the n
 </span>
 
 <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/subvencion/31&gt; a essubv:Subvencion ;
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/31&gt; a essubv:Subvencion ;
   dct:identifier "31"@es ;
   dct:title "CERTAMEN ESCOLAR DE VILLANCICOS 2019"@es ;
   schema:name "PREMIO MEJOR DIRECTOR EX AEQUO CAT B CERTAMEN VILLANCICOS 2019"@es ;
@@ -78,7 +78,7 @@ Example of instance of [essubv:AsignacionBeneficiarioSubvencion](#AsignacionBene
 <pre>
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/asignacionbeneficiariosubvencion/31-X1111111X&gt; a essubv:AsignacionBeneficiarioSubvencion ;
   essubv:tieneBeneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/X1111111X&gt; ;
-  essubv:tieneSubvencion &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/subvencion/31&gt; ;
+  essubv:tieneSubvencion &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/31&gt; ;
   essubv:importeSolicitado "500"^^xsd:float ;
   essubv:importeAdjudicado "500"^^xsd:float ;
   essubv:fechaSolicitud "2020-02-12T00:00:00"^^xsd:dateTime ;
