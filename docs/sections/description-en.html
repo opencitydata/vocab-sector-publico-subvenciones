@@ -1,19 +1,32 @@
-<h2 id="desc" class="list">Vocabulary for the representation of grants awarded by a municipality: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">The following figure shows the class diagram of the ontology, where it can be seen that the core element is the class [essubv:Subvencion](http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion), defined in this vocabulary:</span>
-<center><img src="resources/images/modeloConceptual.png"><figcaption>Figura 1. - Vocabulary for the representation of grant.</figcaption></center>
+<h2 id="desc" class="list">Vocabulary for the representation of data on grants awarded by a municipality: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">The following figure shows the class diagram of the ontology, where it can be seen that the central element is the class [essubv:Convocatoria](http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion), defined in this vocabulary:</span>
+<center><img src="resources/images/modeloConceptual.png"><figcaption>Figure 1. - Vocabulary for the representation of grant data</figcaption></center>
 
 <span class="markdown">
 
-The diagram revolves around the core class [essubv:Subvencion](#Subvencion), which is the main class in this vocabulary. This class will be related to the class [org:Organization](#Organization) using:
-- [essubv:beneficiario](#beneficiario), which would be the awarded of a [essubv:Subvencion](#Subvencion), either a natural or legal person.
-- [essubv:entidadFinanciadora](#entidadFinanciadora), which would correspond to the [org:Organization](#Organization) that finances the [essubv:Subvencion](#Subvencion).
-- [essubv:area](#area), which would correspond to the [essubv:area](#area) that awards the [essubv:Subvencion](#Subvencion).
-- [essubv:servicio](#servicio), which would correspond to the [essubv:servicio](#servicio) of the city council that offers the [essubv:Subvencion](#Subvencion).
-- [essubv:gestionadoPor](#gestionadoPor), which would correspond to the [org:Organization](#Organization) that manages the [essubv:Subvencion](#Subvencion), which can be a government area or a [esadm:Distrito](#Distrito).
+The diagram goes around the main class [essubv:Convocatoria](#Convocatoria). This class is going to be related to [org:Organization](https://www.w3.org/ns/org#Organization), which is the class that will store both the beneficiaries of a grant, as well as the financing entities, areas or services that publish the call. Individuals are treated as organisations.
 
-Finally, the class [essubv:Subvencion](#Subvencion) can arrange a [esconv:Convenio](#Convenio) or be implemented by it.
+The relationship between [essubv:Convocatoria](#Convocatoria) and [org:Organization](https://www.w3.org/ns/org#Organization) participant is made directly in the case of being [essubv:entidadFinanciadora](#entidadFinanciadora), [essubv:area](#area) or [essubv:servicio](#servicio) or through the class [essubv:Concesion](#Concesion) in the case of being a [essubv:beneficiario](#beneficiario).
 
-In addition, in this vocabulary several SKOS concept schemes have been used to represent:
+Each [essubv:Convocatoria](#Convocatoria) can be [essubv:gestionadoPor](#gestionadoPor) either by an [org:Organization](https://www.w3.org/ns/org#Organization) or by a [esadm:Distrito](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito)
+
+[essubv:Convocatoria](#Convocatoria) is composed of the following attributes:
+
+- [dct:identifier](http://purl.org/dc/terms/identifier), text string that will store the call identifier.
+- [dct:title](http://purl.org/dc/terms/title), text string that will store the title of the call.
+- [essubv:objeto](#objeto), text string that will store the purpose of the call.
+- [essubv:nominativa](#nominativa), boolean that will indicate if the call is nominative or not.
+- [essubv:basesReguladoras](#basesReguladoras), URI that will store the link to the bases that will regulate the call.
+- [essubv:importePresupuestado](#importePresupuestado), float type that will store the value of the amount budgeted for the call. This amount will correspond to the total that is initially planned to be awarded to all beneficiaries.
+- [essubv:importeTotalConcedido](#importeTotalConcedido), float type that will store the value of the actual amount spent in the call among all the beneficiaries. This amount does not have to correspond to the one initially budgeted.
+- [essubv:fechaAcuerdo](#fechaAcuerdo), date type field that will store the date on which the call is agreed.
+- [espresup:anioFiscal](http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal), year type field that will store the fiscal year (period between January 1st and December 31th) which the call will be allocated to.
+- [essubv:programaAsText](#programaAsText), text string that will store the expense program classification. A call or a grant can have multiple classifications that will be stored as a single string, differentiated with a separator. This property will be deprecated when implementing classification as a SKOS.
+- [essubv:gastoAsText](#gastoAsText), text string that will store the economic classification of expense. A call or a grant can have multiple classifications that will be stored as a single string, differentiated with a separator. This property will be deprecated when implementing classification as a SKOS.
+
+Finally, the class [essubv:Convocatoria](#Convocatoria) can implement a [esconv:Convenio](#Convenio) or be implemented by it.
+
+In addition, several SKOS concept schemes have been used in this vocabulary to represent:
 
 - Types of instrument
 - Types of procedure
@@ -21,66 +34,91 @@ In addition, in this vocabulary several SKOS concept schemes have been used to r
 - Economic classification of expenditure
 - Grant topics
 
-In Figure 1 several relationships with the SKOS concept class can be observed, however, the specific values have not been specified as they are different depending on the taxonomy they represent. For example, the property [essubv:tipoProcedimiento](#tipoProcedimiento) represents whether the grant is of type "direct-grant" or "concurrency".
+In Figure 1, several relationships with the SKOS concept class can be observed, however, the specific values have not been specified as they are different depending on the taxonomy they represent. For example, the property [essubv:tipoProcedimiento](#tipoProcedimiento) represents whether the grant is of type "concesion-directa" or "concurrencia".
+
+
+The model also includes the class [essubv:Concesion](#Concesion) which will store all the data related to each grant award. This class is directly related to each [essubv:Convocatoria](#Convocatoria) with its beneficiary [org:Organization](https://www.w3.org/ns/org#Organization). All the information of the beneficiaries can be obtained through the property [essubv:beneficiario](#beneficiario), while all the information related to the call can be obtained through the property [essubv:convocatoria](#convocatoria).
+
+[essubv:Concesion](#Concesion) is composed of the following attributes:
+
+- [dct:identifier](http://purl.org/dc/terms/identifier), text string that will store the identifier of the grant.
+- [dct:title](http://purl.org/dc/terms/title), text string that will store the name of the grant project.
+- [essubv:importeSolicitado](#importeSolicitado), float type that will store the value of the amount initially requested by an [org: Organization](https://www.w3.org/ns/org#Organization). As indicated above, individuals are treated as organisations.
+- [essubv:importeConcedido](#importeConcedido), float type that will store the value of the amount finally granted to an [org: Organization](https://www.w3.org/ns/org#Organization).
+- [essubv:fechaSolicitud](#fechaSolicitud), date type field that will store the date the grant is requested.
+- [essubv:fechaConcesion](#fechaConcesion), date type field that will store the date the grant is awarded.
+- [essubv:programaAsText](#programaAsText), text string that will store the expense program classification. A call or a grant can have multiple classifications that will be stored as a single string, differentiated with a separator. This property will be deprecated when implementing classification as a SKOS.
+- [essubv:gastoAsText](#gastoAsText), text string that will store the economic classification of expense. A call or a grant can have multiple classifications that will be stored as a single string, differentiated with a separator. This property will be deprecated when implementing classification as a SKOS.
 
 </span>
 
-<h3>Use cases<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
+<h3>Examples of use<span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
 <span class="markdown">
   In order to facilitate the understanding of the use of some classes and properties of this vocabulary, some examples will be provided below.
 
-  First, to represent a grant, an instance of the class[essubv:Subvencion](#Subvencion) is created with the properties [dct:identifier](http://purl.org/dc/terms/identifier) (grant identifier), [dct:title](http://purl.org/dc/terms/title) (grant title), [essubv:tieneTematica](#tieneTematica) (theme of the grant), [essubv:tipoInstrumento](#tipoInstrumento) (grant tool), [essubv:beneficiario](#beneficiario) (beneficiary of the grant), [essubv:importeConcedido](#importeConcedido) (final amount of the grant) y [essubv:fechaAdjudicacion](#fechaAdjudicacion) (grant award date).
+   First of all, for the representation of a call for a grant, an instance of the class is created [essubv:Convocatoria](#Convocatoria) in which the identifier, the title of the call, the subject to which it belongs, the type of applicable procedure, the budgeted amount, the date of the agreement and, finally, the fiscal year will be included.
 </span>
 <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/1418&gt; a essubv:Subvencion ;
-  dct:identifier "1418"@es ;
-  dct:title "AYUDAS ECONÓMICAS DE ZARAGOZA DEPORTE MUNICIPAL A ENTIDADES DEPORTIVAS DE BASE"@es ;
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/convocatoria/1418&gt; a essubv:Convocatoria ;
+  dct:identifier "conv1418" ;
+  dct:title "AYUDAS ECONÓMICAS DE ZARAGOZA DEPORTE MUNICIPAL A ENTIDADES DEPORTIVAS DE BASE" ;
   essubv:tieneTematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte&gt; ;
-  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt;
-  essubv:beneficiario "G99023392"@es ;
-  essubv:importeConcedido "380"^^xsd:float ;
-  essubv:fechaAdjudicacion "2014-04-30T00:00:00"^^xsd:dateTime .
+  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt;
+  essubv:importePresupuestado "353280"^^xsd:float ;
+  essubv:fechaAcuerdo "2014-04-30T00:00:00"^^xsd:dateTime ;
+  essubv:anioFiscal "2014"^^xsd:gYear .
 </pre>
 
 <span class="markdown">
-As seen in the previous example. The grant is linked to the beneficiary through its identifier. The following example shows the information of the aforementioned beneficiary, which would be composed of their identifier and their name:
+Another example instance of [essubv:Convocatoria](#Convocatoria)
 </span>
 
 <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/G99023392&gt; a org:Organization ;
-  dct:identifier "G99023392"@es ;
-  foaf:name "ASOCIACION CULTURAL DEPORTIVA CLUB BOMBA BASKET"@es .
-</pre>
-
-<span class="markdown">
-Example of instance of [essubv:Subvencion](#Subvencion) that also contains the name of the project [schema:name](#name)
-</span>
-
-<pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/31&gt; a essubv:Subvencion ;
-  dct:identifier "31"@es ;
-  dct:title "CERTAMEN ESCOLAR DE VILLANCICOS 2019"@es ;
-  schema:name "PREMIO MEJOR DIRECTOR EX AEQUO CAT B CERTAMEN VILLANCICOS 2019"@es ;
-  essubv:objeto "AYUDAS FAMILIARES INDEMNIZACIONES Y SIMILARES"@es ;
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/convocatoria/31&gt; a essubv:Convocatoria ;
+  dct:identifier "conv31" ;
+  dct:title "CERTAMEN ESCOLAR DE VILLANCICOS 2019" ;
+  essubv:objeto "AYUDAS FAMILIARES INDEMNIZACIONES Y SIMILARES" ;
   essubv:nominativa "false"^^xsd:boolean ;
-  essubv:importeTotalConcedido "50000"^^xsd:float ;
-  essubv:gestionadoPor &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/180&gt; ;
+  essubv:importeTotalConcedido "500000"^^xsd:float ;
+  essubv:gestionadoPor &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/16&gt; ;
   essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt; ;
   essubv:tieneTematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social&gt; ;
-  essubv:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23&gt; ;
+  essubv:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/zaragoza/23&gt; ;
   essubv:tipoInstrumento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento/subvenciones-previstas-nominativamente-en-el-presupuesto-general-del-ayuntamiento&gt; .
 </pre>
 
 <span class="markdown">
-Example of instance of [essubv:AsignacionBeneficiarioSubvencion](#AsignacionBeneficiarioSubvencion) in which a [essubv:Subvencion](#Subvencion) is related to [essubv:tieneBeneficiario](#tieneBeneficiario)
+As can be seen in the previous example, the call for the grant has been managed by organisation 16. The following example will show the information related to organisation 16:
 </span>
 
 <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/asignacionbeneficiariosubvencion/31-X1111111X&gt; a essubv:AsignacionBeneficiarioSubvencion ;
-  essubv:tieneBeneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/X1111111X&gt; ;
-  essubv:tieneSubvencion &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/31&gt; ;
-  essubv:importeSolicitado "500"^^xsd:float ;
-  essubv:importeAdjudicado "500"^^xsd:float ;
-  essubv:fechaSolicitud "2020-02-12T00:00:00"^^xsd:dateTime ;
-  essubv:fechaAdjudicacion "2020-03-24T00:00:00"^^xsd:dateTime .
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organization/16&gt; a org:Organization ;
+  dct:identifier "org16" ;
+  foaf:name "Zaragoza Deporte Municipal, S.A." .
+</pre>
+
+<span class="markdown">
+Here is an example of an instance of the class [essubv:Concesion](#Concesion) which will include, as information about the call, the call identifier, the name of the project, the amount requested and the amount that is finally awarded, the date on which the grant is requested and the date on which the one that is granted and, finally, it is included both, the relationship or the call to which the concession refers and the organization that has been the beneficiary.
+</span>
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/concesion/1523&gt; a essubv:Convocatoria ;
+  dct:identifier "con1523" ;
+  dct:title "PREMIO MEJOR DIRECTOR EX AEQUO CAT B CERTAMEN VILLANCICOS 2019" ;
+  essubv:importeSolicitado "1500"^^xsd:float ;
+  essubv:importeConcedido "1500"^^xsd:float ;
+  essubv:fechaSolicitud "2019-04-23T00:00:00"^^xsd:dateTime ;
+  essubv:fechaConcesion "2019-06-30T00:00:00"^^xsd:dateTime ;
+  essubv:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/zaragoza/23&gt; ;
+  essubv:convocatoria &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/convocatoria/155&gt; ;
+  essubv:beneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/beneficiario/G99023392&gt.
+</pre>
+
+<span class="markdown">
+As can be seen in the previous example, the call for the grant has been awarded to the organization G99023392. The following example will show the information regarding the organisation G99023392:
+</span>
+
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organization/G99023392&gt; a org:Organization ;
+  dct:identifier "G99023392"@es ;
+  foaf:name "ASOCIACION CULTURAL DEPORTIVA CLUB BOMBA BASKET"@es .
 </pre>

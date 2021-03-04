@@ -1,17 +1,30 @@
 <h2 id="desc" class="list">Vocabulario para la representación de datos sobre subvenciones concedidas por un municipio: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
-<span class="markdown">La siguiente figura muestra el diagrama de clases de la ontología, donde se puede observar que el elemento central es la clase [essubv:Subvencion](http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion), definida en este vocabulario:</span>
+<span class="markdown">La siguiente figura muestra el diagrama de clases de la ontología, donde se puede observar que el elemento central es la clase [essubv:Convocatoria](http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion), definida en este vocabulario:</span>
 <center><img src="resources/images/modeloConceptual.png"><figcaption>Figura 1. - Vocabulario para la representación de datos sobre subvenciones</figcaption></center>
 
 <span class="markdown">
 
-El diagrama gira en torno a la clase central [essubv:Subvencion](#Subvencion), que es la clase principal de este vocabulario. Esta clase se va a relacionar con la clase [org:Organization](#Organization) mediante:
-- [essubv:beneficiario](#beneficiario), que sería el adjudicatario de una [essubv:Subvencion](#Subvencion), bien sea una persona física o jurídica.
-- [essubv:entidadFinanciadora](#entidadFinanciadora), que correspondería a la [org:Organization](#Organization) que financia la [essubv:Subvencion](#Subvencion).
-- [essubv:area](#area), que correspondería al [essubv:area](#area) que concede la [essubv:Subvencion](#Subvencion).
-- [essubv:servicio](#servicio), que correspondería al [essubv:servicio](#servicio) del ayuntamiento que ofrece la [essubv:Subvencion](#Subvencion).
-- [essubv:gestionadoPor](#gestionadoPor), que correspondería a la [org:Organization](#Organization) que gestiona la [essubv:Subvencion](#Subvencion), pudiendo ser un área de gobierno o un [esadm:Distrito](#Distrito).
+El diagrama gira en torno a la clase principal [essubv:Convocatoria](#Convocatoria). Esta clase se va a relacionar con [org:Organization](https://www.w3.org/ns/org#Organization), que es la clase que va a almacenar tanto a los beneficiarios de una subvención, como a las entidades financiadoras, áreas o servicios que publiquen la convocatoria. Las personas físicas son tratadas como organizaciones.
 
-Por último, la clase [essubv:Subvencion](#Subvencion) puede instrumentar un [esconv:Convenio](#Convenio) o ser instrumentada por éste.
+La relación entre la [essubv:Convocatoria](#Convocatoria) y la [org:Organization](https://www.w3.org/ns/org#Organization) participante se hace directamente en el caso de ser [essubv:entidadFinanciadora](#entidadFinanciadora), [essubv:area](#area) o [essubv:servicio](#servicio) o a través de la clase [essubv:Concesion](#Concesion) en el caso de ser un [essubv:beneficiario](#beneficiario).
+
+Cada [essubv:Convocatoria](#Convocatoria) puede ser [essubv:gestionadoPor](#gestionadoPor) bien por una [org:Organization](https://www.w3.org/ns/org#Organization) o bien por un [esadm:Distrito](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito)
+
+[essubv:Convocatoria](#Convocatoria) está compuesta de los siguientes atributos:
+
+- [dct:identifier](http://purl.org/dc/terms/identifier), cadena de texto que almacenará el identificador de la convocatoria.
+- [dct:title](http://purl.org/dc/terms/title), cadena de texto que almcenará el título de la convocatoria.
+- [essubv:objeto](#objeto), cadena de texto que almcenará al fin al que se dirige la convocatoria.
+- [essubv:nominativa](#nominativa), booleano que indicará si la convocatoria es o no nominativa.
+- [essubv:basesReguladoras](#basesReguladoras), URI que almacenará el enlace a las bases que van a regular la convocatoria.
+- [essubv:importePresupuestado](#importePresupuestado), tipo float que almacenará el valor del importe presupuestado para la convocatoria. Este importe corresponderá con el total que se tenga previsto adjudicar inicialmente a todos los beneficiarios.
+- [essubv:importeTotalConcedido](#importeTotalConcedido), tipo float que almacenará el valor del importe real gastado en la convocatoria entre todos los beneficiarios. Este importe no tiene por qué corresponder con el inicialmente presupuestado.
+- [essubv:fechaAcuerdo](#fechaAcuerdo), campo de tipo fecha que almacenará la fecha en la que se acuerda la convocatoria.
+- [espresup:anioFiscal](http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal), campo de tipo año que almacenará el año fiscal (periodo comprendido entre el 1 de enero y el 31 de diciembre) al que se imputará la convocatoria.
+- [essubv:programaAsText](#programaAsText), cadena de texto que almacenará la clasificación de programa de gasto. Una convocatoria o una subvención puede tener varias clasificaciones que se almacenarán como un único string, diferenciados con un separador. Esta propiedad quedará obsoleta al implementar la clasificación como un SKOS.
+- [essubv:gastoAsText](#gastoAsText), cadena de texto que almacenará la clasificación económica de gasto. Una convocatoria o una subvención puede tener varias clasificaciones que se almacenarán como un único string, diferenciados con un separador. Esta propiedad quedará obsoleta al implementar la clasificación como un SKOS.
+
+Por último, la clase [essubv:Convocatoria](#Convocatoria) puede instrumentar un [esconv:Convenio](#Convenio) o ser instrumentada por éste.
 
 Adicionalmente, en este vocabulario se han utilizado varios esquemas de conceptos SKOS para representar:
 
@@ -21,7 +34,21 @@ Adicionalmente, en este vocabulario se han utilizado varios esquemas de concepto
 - Clasificación económica de gasto
 - Temáticas de subvenciones
 
-En la Figura 1 se pueden observar varias relaciones con la clase de conceptos SKOS, sin embargo, los valores concretos no se han especificado pues son diferentes según la taxonomía que representen. Por ejemplo, la propiedad [essubv:tipoProcedimiento](#tipoProcedimiento) representa si la subvención es de tipo "concesión-directa" o "concurrencia".
+En la Figura 1 se pueden observar varias relaciones con la clase de conceptos SKOS, sin embargo, los valores concretos no se han especificado pues son diferentes según la taxonomía que representen. Por ejemplo, la propiedad [essubv:tipoProcedimiento](#tipoProcedimiento) representa si la subvención es de tipo "concesion-directa" o "concurrencia".
+
+
+El modelo también incluye la clase [essubv:Concesion](#Concesion) que almacenará todos los datos relativos a cada concesión de una subvención. Esta clase se relaciona directamente cada [essubv:Convocatoria](#Convocatoria) con su [org:Organization](https://www.w3.org/ns/org#Organization) beneficiaria. Toda la información de los beneficiarios se podrá obtener a través de la propiedad [essubv:beneficiario](#beneficiario), mientras que toda la información relativa a la convocatoria se podrá obtener a través de la propiedad [essubv:convocatoria](#convocatoria).
+
+[essubv:Concesion](#Concesion) está compuesta de los siguientes atributos:
+
+- [dct:identifier](http://purl.org/dc/terms/identifier), cadena de texto que almacenará el identificador de la concesión.
+- [dct:title](http://purl.org/dc/terms/title), cadena de texto que almcenará el nombre del proyecto de la concesión.
+- [essubv:importeSolicitado](#importeSolicitado), tipo float que almacenará el valor del importe solicitado inicialmente por una [org:Organization](https://www.w3.org/ns/org#Organization). Como se ha indicado anteriormente, las personas físicas son tratadas como organizaciones.
+- [essubv:importeConcedido](#importeConcedido), tipo float que almacenará el valor del importe concedido finalmente a una [org:Organization](https://www.w3.org/ns/org#Organization).
+- [essubv:fechaSolicitud](#fechaSolicitud), campo de tipo fecha que almacenará la fecha en la que se solicita la subvención.
+- [essubv:fechaConcesion](#fechaConcesion), campo de tipo fecha que almacenará la fecha en la que se concede la subvención.
+- [essubv:programaAsText](#programaAsText), cadena de texto que almacenará la clasificación de programa de gasto. Una convocatoria o una subvención puede tener varias clasificaciones que se almacenarán como un único string, diferenciados con un separador. Esta propiedad quedará obsoleta al implementar la clasificación como un SKOS.
+- [essubv:gastoAsText](#gastoAsText), cadena de texto que almacenará la clasificación económica de gasto. Una convocatoria o una subvención puede tener varias clasificaciones que se almacenarán como un único string, diferenciados con un separador. Esta propiedad quedará obsoleta al implementar la clasificación como un SKOS.
 
 </span>
 
@@ -29,58 +56,69 @@ En la Figura 1 se pueden observar varias relaciones con la clase de conceptos SK
 <span class="markdown">
   Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de este vocabulario se proporcionarán a continuación algunos ejemplos.
 
-  En primer lugar, para la representación de una subvención, se crea una instancia de la clase [essubv:Subvencion](#Subvencion) con las propiedades [dct:identifier](http://purl.org/dc/terms/identifier) (identificador de la subvención), [dct:title](http://purl.org/dc/terms/title) (título de la subvención), [essubv:tieneTematica](#tieneTematica) (temática de la subvención), [essubv:tipoInstrumento](#tipoInstrumento) (instrumento de la subvención), [essubv:beneficiario](#beneficiario) (beneficiario de la subvención), [essubv:importeConcedido](#importeConcedido) (importe final de la subvención) y [essubv:fechaAdjudicacion](#fechaAdjudicacion) (fecha de adjudicación de la subvención).
+  En primer lugar, para la representación de una convocatoria de una subvención, se crea una instancia de la clase [essubv:Convocatoria](#Convocatoria) en la que se van a incluir el identificador, el título de la convocatoria, la temática a la que pertenece, el tipo de procedimiento aplicable, el importe presupuestado, la fecha del acuerdo y, por último, el año fiscal al que se va a imputar la convocatoria.
 </span>
 <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/1418&gt; a essubv:Subvencion ;
-  dct:identifier "1418"@es ;
-  dct:title "AYUDAS ECONÓMICAS DE ZARAGOZA DEPORTE MUNICIPAL A ENTIDADES DEPORTIVAS DE BASE"@es ;
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/convocatoria/1418&gt; a essubv:Convocatoria ;
+  dct:identifier "conv1418" ;
+  dct:title "AYUDAS ECONÓMICAS DE ZARAGOZA DEPORTE MUNICIPAL A ENTIDADES DEPORTIVAS DE BASE" ;
   essubv:tieneTematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte&gt; ;
-  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt;
-  essubv:beneficiario "G99023392"@es ;
-  essubv:importeConcedido "380"^^xsd:float ;
-  essubv:fechaAdjudicacion "2014-04-30T00:00:00"^^xsd:dateTime .
+  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt;
+  essubv:importePresupuestado "353280"^^xsd:float ;
+  essubv:fechaAcuerdo "2014-04-30T00:00:00"^^xsd:dateTime ;
+  essubv:anioFiscal "2014"^^xsd:gYear .
 </pre>
 
 <span class="markdown">
-Como se observa en el ejemplo anterior. La subvención se enlaza con el beneficiario a través de su identificador. El siguiente ejemplo muestra la información de dicho beneficiario, la cual estaría compuesta por su identificador y por su nombre:
+Otro ejemplo de instancia de [essubv:Convocatoria](#Convocatoria)
+</span>
+
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/convocatoria/31&gt; a essubv:Convocatoria ;
+  dct:identifier "conv31" ;
+  dct:title "CERTAMEN ESCOLAR DE VILLANCICOS 2019" ;
+  essubv:objeto "AYUDAS FAMILIARES INDEMNIZACIONES Y SIMILARES" ;
+  essubv:nominativa "false"^^xsd:boolean ;
+  essubv:importeTotalConcedido "500000"^^xsd:float ;
+  essubv:gestionadoPor &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/16&gt; ;
+  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt; ;
+  essubv:tieneTematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social&gt; ;
+  essubv:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/zaragoza/23&gt; ;
+  essubv:tipoInstrumento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento/subvenciones-previstas-nominativamente-en-el-presupuesto-general-del-ayuntamiento&gt; .
+</pre>
+
+<span class="markdown">
+Como se observa en el ejemplo anterior, la convocatoria de la subvención ha sido gestionada por la organización 16. El siguiente ejemplo mostrará la información relativa a la organización 16:
+</span>
+
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organization/16&gt; a org:Organization ;
+  dct:identifier "org16" ;
+  foaf:name "Zaragoza Deporte Municipal, S.A." .
+</pre>
+
+<span class="markdown">
+  A continuación, se muestra un ejemplo de una instancia de la clase [essubv:Concesion](#Concesion) en la que se van a incluir, como información de la convocatoria, el identificador de la convocatoria, el nombre del proyecto, el importe que se solicita y el que finalmente se concede, la fecha en la que se solicita la subvención y la fecha en la que se concede y,finalmente, se incluye la relación tanto la convocatoria a la que se refiere la concesión como a la organización que ha sido beneficiaria.
+</span>
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/concesion/1523&gt; a essubv:Convocatoria ;
+  dct:identifier "con1523" ;
+  dct:title "PREMIO MEJOR DIRECTOR EX AEQUO CAT B CERTAMEN VILLANCICOS 2019" ;
+  essubv:importeSolicitado "1500"^^xsd:float ;
+  essubv:importeConcedido "1500"^^xsd:float ;
+  essubv:fechaSolicitud "2019-04-23T00:00:00"^^xsd:dateTime ;
+  essubv:fechaConcesion "2019-06-30T00:00:00"^^xsd:dateTime ;
+  essubv:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/zaragoza/23&gt; ;
+  essubv:convocatoria &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/convocatoria/155&gt; ;
+  essubv:beneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/beneficiario/G99023392&gt.
+</pre>
+
+<span class="markdown">
+Como se observa en el ejemplo anterior, la convocatoria de la subvención ha sido adjudicada a la organización G99023392. El siguiente ejemplo mostrará la información relativa a la organización G99023392:
 </span>
 
 <pre>
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organization/G99023392&gt; a org:Organization ;
   dct:identifier "G99023392"@es ;
   foaf:name "ASOCIACION CULTURAL DEPORTIVA CLUB BOMBA BASKET"@es .
-</pre>
-
-<span class="markdown">
-Ejemplo de instancia de [essubv:Subvencion](#Subvencion) que también contiene el nombre del proyecto [schema:name](#name)
-</span>
-
-<pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/31&gt; a essubv:Subvencion ;
-  dct:identifier "31"@es ;
-  dct:title "CERTAMEN ESCOLAR DE VILLANCICOS 2019"@es ;
-  schema:name "PREMIO MEJOR DIRECTOR EX AEQUO CAT B CERTAMEN VILLANCICOS 2019"@es ;
-  essubv:objeto "AYUDAS FAMILIARES INDEMNIZACIONES Y SIMILARES"@es ;
-  essubv:nominativa "false"^^xsd:boolean ;
-  essubv:importeTotalConcedido "50000"^^xsd:float ;
-  essubv:gestionadoPor &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/180&gt; ;
-  essubv:tipoProcedimiento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento/concurrencia-competitiva&gt; ;
-  essubv:tieneTematica &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social&gt; ;
-  essubv:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23&gt; ;
-  essubv:tipoInstrumento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento/subvenciones-previstas-nominativamente-en-el-presupuesto-general-del-ayuntamiento&gt; .
-</pre>
-
-<span class="markdown">
-Ejemplo de instancia de [essubv:AsignacionBeneficiarioSubvencion](#AsignacionBeneficiarioSubvencion) en la que se relaciona una [essubv:Subvencion](#Subvencion) con [essubv:tieneBeneficiario](#tieneBeneficiario)
-</span>
-
-<pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/asignacionbeneficiariosubvencion/31-X1111111X&gt; a essubv:AsignacionBeneficiarioSubvencion ;
-  essubv:tieneBeneficiario &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/organizacion/X1111111X&gt; ;
-  essubv:tieneSubvencion &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/subvencion/31&gt; ;
-  essubv:importeSolicitado "500"^^xsd:float ;
-  essubv:importeAdjudicado "500"^^xsd:float ;
-  essubv:fechaSolicitud "2020-02-12T00:00:00"^^xsd:dateTime ;
-  essubv:fechaAdjudicacion "2020-03-24T00:00:00"^^xsd:dateTime .
 </pre>

@@ -3,18 +3,22 @@
 <h4>Clases</h4>
 <ul class="hlist">
    <li>
-      <a href="#AsignacionBeneficiarioSubvencion"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion">AsignaciónBeneficiarioSubvención</a>
-   </li>
-   <li>
       <a href="#http://www.w3.org/2008/05/skos#Concept" title="http://www.w3.org/2008/05/skos#Concept">Concept</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2008/05/skos#ConceptScheme" title="http://www.w3.org/2008/05/skos#ConceptScheme">Concept Scheme</a>
    </li>
    <li>
+      <a href="#Concesion"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion">Concesión de Subvención</a>
+   </li>
+   <li>
       <a href="#Convenio"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio">Convenio</a>
+   </li>
+   <li>
+      <a href="#Convocatoria"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Convocatoria de Subvención</a>
    </li>
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
@@ -23,11 +27,11 @@
    <li>
       <a href="#https://www.w3.org/ns/org#Organization" title="https://www.w3.org/ns/org#Organization">Organización</a>
    </li>
-   <li>
-      <a href="#Subvencion"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Subvención</a>
-   </li>
 </ul><h4>Propiedades de objeto</h4><ul class="hlist">
+   <li>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario"
+         title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario">beneficiario</a>
+   </li>
    <li>
       <a href="#https://www.w3.org/ns/org#classification" title="https://www.w3.org/ns/org#classification">clasificación</a>
    </li>
@@ -38,6 +42,10 @@
    <li>
       <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma"
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma">clasificación programa gasto</a>
+   </li>
+   <li>
+      <a href="#convocatoria"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria">convocatoria</a>
    </li>
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora"
@@ -63,14 +71,6 @@
          title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio">servicio</a>
    </li>
    <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario"
-         title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario">tiene beneficiario</a>
-   </li>
-   <li>
-      <a href="#tieneSubvencion"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneSubvencion">tiene subvención</a>
-   </li>
-   <li>
       <a href="#tieneTematica"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica">tiene temática</a>
    </li>
@@ -88,6 +88,10 @@
    </li>
 </ul><h4>Propiedades de datos</h4><ul class="hlist">
    <li>
+      <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">año fiscal</a>
+   </li>
+   <li>
       <a href="#basesReguladoras"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras">bases reguladoras</a>
    </li>
@@ -96,19 +100,30 @@
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo">fecha de acuerdo</a>
    </li>
    <li>
-      <a href="#fechaAdjudicacion"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion">fecha de adjudicación</a>
+      <a href="#fechaConcesion"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion">fecha de concesión</a>
    </li>
    <li>
       <a href="#fechaSolicitud"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud">fecha de solicitud</a>
    </li>
    <li>
+      <a href="#gastoAsText"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText">gasto como texto</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identificador</a>
+   </li>
+   <li>
       <a href="#https://www.w3.org/ns/org#identifier" title="https://www.w3.org/ns/org#identifier">identificador</a>
    </li>
    <li>
-      <a href="#importeAdjudicado"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeAdjudicado">importe adjudicado</a>
+      <a href="#importeConcedido"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido">importe concedido</a>
+   </li>
+   <li>
+      <a href="#importePresupuestado"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado">importe presupuestado</a>
    </li>
    <li>
       <a href="#importeSolicitado"
@@ -122,15 +137,16 @@
       <a href="#http://xmlns.com/foaf/0.1/name" title="http://xmlns.com/foaf/0.1/name">nombre</a>
    </li>
    <li>
-      <a href="#https://schema.org/name" title="https://schema.org/name">nombre de proyecto</a>
-   </li>
-   <li>
       <a href="#nominativa"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa">nominativa</a>
    </li>
    <li>
       <a href="#objeto"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto">objeto</a>
+   </li>
+   <li>
+      <a href="#programaAsText"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText">programa como texto</a>
    </li>
    <li>
       <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">título</a>

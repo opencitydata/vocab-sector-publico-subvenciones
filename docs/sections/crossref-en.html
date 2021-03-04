@@ -8,6 +8,14 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio">Agreement</a>
       </li>
       <li>
+         <a href="#Concesion"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion">Award of a Grant</a>
+      </li>
+      <li>
+         <a href="#Convocatoria"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/2008/05/skos#Concept" title="http://www.w3.org/2008/05/skos#Concept">Concept</a>
       </li>
       <li>
@@ -16,14 +24,6 @@ This section provides details for each class and property defined by Vocabulary 
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">District</a>
-      </li>
-      <li>
-         <a href="#Subvencion"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
-      </li>
-      <li>
-         <a href="#AsignacionBeneficiarioSubvencion"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion">GrantBeneficiaryAllocation</a>
       </li>
       <li>
          <a href="#https://www.w3.org/ns/org#Organization" title="https://www.w3.org/ns/org#Organization">Organisation</a>
@@ -56,6 +56,106 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>
             <a href="#instrumenta"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta">implement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Concesion">
+      <h3>Award of a Grant<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion</p>
+      <div class="comment">
+         <span class="markdown">Class to store the grant awarded to an organisation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion">http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#importeConcedido"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido">allocated amount</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#importeSolicitado"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado">amount requested</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaSolicitud"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud">application date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario">beneficiary</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#fechaConcesion"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion">grant date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#convocatoria"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria">has grant</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Convocatoria">
+      <h3>Call for Grant<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria</p>
+      <div class="comment">
+         <span class="markdown">This class represents the main concept of this ontology, which is the call for a grant that a municipality grants to an organisation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion">http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#fechaAcuerdo"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo">agreement date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area">area</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#importePresupuestado"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado">budgeted amount</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora">financing entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">fiscal year</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#tieneTematica"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica">has thematic</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#instrumenta"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta">implement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#gestionadoPor"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor">managed by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#nominativa"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa">nominative</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#objeto"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto">object</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#basesReguladoras"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras">regulatory base</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio">service</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#importeTotalConcedido"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido">total amount awarded</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoProcedimiento"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento">type of procedure</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#tipoInstrumento"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento">type of tool</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#convocatoria"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria">has grant</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#instrumentadoPor"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor">implemented by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -157,104 +257,6 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Subvencion">
-      <h3>Grant<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion</p>
-      <div class="comment">
-         <span class="markdown">Esta clase representa el concepto principal de esta ontología, que es el de la subvención que concede un municipio a alguna organización</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion">http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</a>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#fechaAcuerdo"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo">agreement date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area">area</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora">financing entity</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#tieneTematica"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica">has thematic</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#instrumenta"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta">implement</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#gestionadoPor"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor">managed by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#nominativa"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa">nominative</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#objeto"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto">object</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://schema.org/name" title="https://schema.org/name">project name</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#basesReguladoras"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras">regulatory base</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio">service</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">title</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#importeTotalConcedido"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido">total ammount awarded</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoProcedimiento"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento">type of procedure</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#tipoInstrumento"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento">type of tool</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario">has beneficiary</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#tieneSubvencion"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneSubvencion">has grant</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#instrumentadoPor"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor">implemented by</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="AsignacionBeneficiarioSubvencion">
-      <h3>GrantBeneficiaryAllocation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion</p>
-      <div class="comment">
-         <span class="markdown">Class to store the data of the relationship of a Grant and its corresponding Organisation</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion">http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</a>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#importeAdjudicado"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeAdjudicado">ammount awarded</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#importeSolicitado"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado">amount requested</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaSolicitud"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud">application date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaAdjudicacion"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion">award date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario">has beneficiary</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#tieneSubvencion"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneSubvencion">has grant</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="https://www.w3.org/ns/org#Organization">
       <h3>Organisation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -267,15 +269,20 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://www.w3.org/ns/org#classification" title="https://www.w3.org/ns/org#classification">classification</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://www.w3.org/ns/org#identifier" title="https://www.w3.org/ns/org#identifier">identifier</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area">area</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario">beneficiary</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora">financing entity</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio"
@@ -290,6 +297,10 @@ This section provides details for each class and property defined by Vocabulary 
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area">area</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario">beneficiary</a>
       </li>
       <li>
          <a href="#https://www.w3.org/ns/org#classification" title="https://www.w3.org/ns/org#classification">classification</a>
@@ -307,12 +318,8 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora">financing entity</a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario"
-            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario">has beneficiary</a>
-      </li>
-      <li>
-         <a href="#tieneSubvencion"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneSubvencion">has grant</a>
+         <a href="#convocatoria"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria">has grant</a>
       </li>
       <li>
          <a href="#tieneTematica"
@@ -363,11 +370,47 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://www.w3.org/ns/org#Organization" title="https://www.w3.org/ns/org#Organization">Organisation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario">
+      <h3>beneficiary<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario</p>
+      <div class="comment">
+         <span class="markdown">Property that identifies the awardee of a grant. Its rank is not specified, as it can be an organisation or a person, which is treated as an organisation. A specific range may be specified in the future (for example, org: W3C Organization Ontology Organization).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Concesion"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion">Award of a Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -393,6 +436,8 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -427,22 +472,11 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
       </dl>
       <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
             </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://www.w3.org/2008/05/skos#Concept" title="http://www.w3.org/2008/05/skos#Concept">Concept</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">and</span> (<a href="#http://www.w3.org/2008/05/skos#inScheme" title="http://www.w3.org/2008/05/skos#inScheme">is in scheme</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/economica-gasto"
-                  title="http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/economica-gasto">economica gasto</a>)</dd>
          </dl>
       </div>
    </div>
@@ -460,21 +494,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dt>Is defined by</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
       </dl>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://www.w3.org/2008/05/skos#Concept" title="http://www.w3.org/2008/05/skos#Concept">Concept</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">and</span> (<a href="#http://www.w3.org/2008/05/skos#inScheme" title="http://www.w3.org/2008/05/skos#inScheme">is in scheme</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/programa-gasto"
-                  title="http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/programa-gasto">programa gasto</a>)</dd>
-         </dl>
-      </div>
    </div>
    <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora">
       <h3>financing entity<sup class="type-op" title="object property">op</sup>
@@ -493,6 +512,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -500,8 +521,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -512,48 +533,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario">
-      <h3>has beneficiary<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario</p>
-      <div class="comment">
-         <span class="markdown">Propiedad que identifica al adjudicatario de una subvención. No se especifica su rango, pues puede ser una persona o una organización. Es posible que en el futuro se especifique un rango específico (por ejemplo, org:Organization de la W3C Organization Ontology).</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#AsignacionBeneficiarioSubvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion">GrantBeneficiaryAllocation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="tieneSubvencion">
+   <div class="entity" id="convocatoria">
       <h3>has grant<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneSubvencion</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria</p>
       <div class="comment">
          <span class="markdown">Propiedad que identifica la subvención de una asignación.</span>
       </div>
@@ -569,14 +555,14 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#AsignacionBeneficiarioSubvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion">GrantBeneficiaryAllocation</a>
+               <a href="#Concesion"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion">Award of a Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -604,8 +590,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -637,11 +623,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -676,6 +664,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -685,8 +675,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -744,11 +734,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -780,11 +772,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -817,8 +811,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -850,11 +844,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -877,8 +873,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo">agreement date</a>
       </li>
       <li>
-         <a href="#importeAdjudicado"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeAdjudicado">ammount awarded</a>
+         <a href="#importeConcedido"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido">allocated amount</a>
       </li>
       <li>
          <a href="#importeSolicitado"
@@ -889,8 +885,19 @@ Based on their economic nature, the chapters will be broken down into articles, 
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud">application date</a>
       </li>
       <li>
-         <a href="#fechaAdjudicacion"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion">award date</a>
+         <a href="#importePresupuestado"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado">budgeted amount</a>
+      </li>
+      <li>
+         <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">fiscal year</a>
+      </li>
+      <li>
+         <a href="#fechaConcesion"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion">grant date</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
       </li>
       <li>
          <a href="#https://www.w3.org/ns/org#identifier" title="https://www.w3.org/ns/org#identifier">identifier</a>
@@ -907,18 +914,23 @@ Based on their economic nature, the chapters will be broken down into articles, 
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto">object</a>
       </li>
       <li>
-         <a href="#https://schema.org/name" title="https://schema.org/name">project name</a>
+         <a href="#programaAsText"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText">program as text</a>
       </li>
       <li>
          <a href="#basesReguladoras"
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras">regulatory base</a>
       </li>
       <li>
+         <a href="#gastoAsText"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText">spend as text</a>
+      </li>
+      <li>
          <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">title</a>
       </li>
       <li>
          <a href="#importeTotalConcedido"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido">total ammount awarded</a>
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido">total amount awarded</a>
       </li>
    </ul>
    <div class="entity" id="fechaAcuerdo">
@@ -929,7 +941,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo</p>
       <div class="comment">
-         <span class="markdown">Fecha de acuerdo de iniciación de la subvención.</span>
+         <span class="markdown">Grant initiation agreement date.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -938,11 +950,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -952,15 +966,15 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
-   <div class="entity" id="importeAdjudicado">
-      <h3>ammount awarded<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="importeConcedido">
+      <h3>allocated amount<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeAdjudicado</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido</p>
       <div class="comment">
-         <span class="markdown">Importe de subvención concedido a una organización</span>
+         <span class="markdown">Grant amount awarded to an organisation.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -969,11 +983,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#AsignacionBeneficiarioSubvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion">GrantBeneficiaryAllocation</a>
+               <a href="#Concesion"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion">Award of a Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -991,7 +1007,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado</p>
       <div class="comment">
-         <span class="markdown">Importe que se requiere al solicitar la subvención.</span>
+         <span class="markdown">Amount required when applying for a grant.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1000,11 +1016,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#AsignacionBeneficiarioSubvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion">GrantBeneficiaryAllocation</a>
+               <a href="#Concesion"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion">Award of a Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1022,7 +1040,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud</p>
       <div class="comment">
-         <span class="markdown">Fecha en la que se solicita la subvención.</span>
+         <span class="markdown">Date on which the grant is requested.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1031,11 +1049,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#AsignacionBeneficiarioSubvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion">GrantBeneficiaryAllocation</a>
+               <a href="#Concesion"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion">Award of a Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1045,15 +1065,73 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
-   <div class="entity" id="fechaAdjudicacion">
-      <h3>award date<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="importePresupuestado">
+      <h3>budgeted amount<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado</p>
       <div class="comment">
-         <span class="markdown">Fecha en que se concede la subvención.</span>
+         <span class="markdown">Initial Budgeted Amount of a Grant.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">
+      <h3>fiscal year<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal</p>
+      <div class="comment">
+         <span class="markdown">Fiscal year. Period of 12 months between the 1st of January and the 31st of December.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#gYear">g year</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fechaConcesion">
+      <h3>grant date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion</p>
+      <div class="comment">
+         <span class="markdown">Date the grant is awarded.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1062,16 +1140,43 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#AsignacionBeneficiarioSubvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion">GrantBeneficiaryAllocation</a>
+               <a href="#Concesion"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion">Award of a Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/identifier">
+      <h3>identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
+      <div class="comment">
+         <span class="markdown">Code or identifier of a call or assignment</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>
@@ -1084,7 +1189,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
       <p>
          <strong>IRI:</strong> https://www.w3.org/ns/org#identifier</p>
       <div class="comment">
-         <span class="markdown">Código o identificador de una subvención</span>
+         <span class="markdown">Code or identifier of an organisation.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1094,6 +1199,11 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <p>
             <strong>has characteristics:</strong> functional</p>
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://www.w3.org/ns/org#Organization" title="https://www.w3.org/ns/org#Organization">Organisation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
@@ -1113,17 +1223,12 @@ Based on their economic nature, the chapters will be broken down into articles, 
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
-         <dd>
-            <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>
-         </dd>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
-            <dt>has equivalent properties</dt>
-            <dd>
-               <a href="#https://schema.org/name" title="https://schema.org/name">project name</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
@@ -1139,7 +1244,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa</p>
       <div class="comment">
-         <span class="markdown">Campo que indica si la subvención es nominativa, que es aquella cuyo objeto, dotación presupuestaria y beneficiario aparecen determinados expresamente en el estado de gastos del presupuesto.</span>
+         <span class="markdown">Property that indicates whether the grant is nominative, which is the one whose purpose, budget allocation and beneficiary are expressly determined in the statement of budget expenses.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1151,8 +1256,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1170,7 +1275,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto</p>
       <div class="comment">
-         <span class="markdown">Finalidad de la subvencón.</span>
+         <span class="markdown">Purpose of the grant.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1179,11 +1284,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1193,29 +1300,26 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://schema.org/name">
-      <h3>project name<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="programaAsText">
+      <h3>program as text<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://schema.org/name</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText</p>
       <div class="comment">
-         <span class="markdown">Nombre del proyecto al que está asociada la subvención</span>
+         <span class="markdown">Property to include expense program classification as text. A call or a grant can have multiple classifications that will be stored as a single string, differentiated with a separator. This property will be deprecated when implementing classification as a SKOS.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
+      </dl>
+      <dl>
+         <dt>Is deprecated</dt>
+         <dd/>
+      </dl>
       <div class="description">
          <dl>
-            <dt>has equivalent properties</dt>
-            <dd>
-               <a href="#http://xmlns.com/foaf/0.1/name" title="http://xmlns.com/foaf/0.1/name">name</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
@@ -1231,7 +1335,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras</p>
       <div class="comment">
-         <span class="markdown">Documento de gestión de la subvención que establece los criterios y regula la oncesión de la subvención.</span>
+         <span class="markdown">Grant management document that establishes the criteria and regulates the granting of the grant.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1245,13 +1349,40 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="gastoAsText">
+      <h3>spend as text<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText</p>
+      <div class="comment">
+         <span class="markdown">Property to include the economic classification of expenditure as text. A call or a grant can have multiple classifications that will be stored as a single string, differentiated with a separator. This property will be deprecated when implementing classification as a SKOS.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
+      </dl>
+      <dl>
+         <dt>Is deprecated</dt>
+         <dd/>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>
@@ -1264,16 +1395,16 @@ Based on their economic nature, the chapters will be broken down into articles, 
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
       <div class="comment">
-         <span class="markdown">Contiene el título de la subvención</span>
+         <span class="markdown">Contains the title of the call or the name of the project in the case of an assignment.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion</dd>
+      </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
@@ -1282,14 +1413,14 @@ Based on their economic nature, the chapters will be broken down into articles, 
       </div>
    </div>
    <div class="entity" id="importeTotalConcedido">
-      <h3>total ammount awarded<sup class="type-dp" title="data property">dp</sup>
+      <h3>total amount awarded<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido</p>
       <div class="comment">
-         <span class="markdown">Importe total de la subvención.</span>
+         <span class="markdown">The total amount of the grant awarded by a convening organisation, does not have to coincide with the initial amount budgeted.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1298,11 +1429,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dd>
       </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Subvencion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
+               <a href="#Convocatoria"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

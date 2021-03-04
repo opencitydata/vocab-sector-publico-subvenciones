@@ -1,12 +1,21 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3.org/2008/05/skos#Concept"
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
     }, {
-      "@id" : "_:genid3"
+      "@id" : "https://www.w3.org/ns/org#Organization"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2008/05/skos#inScheme"
   } ]
 }, {
   "@id" : "_:genid12",
@@ -22,7 +31,7 @@
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento"
+    "@id" : "http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2008/05/skos#inScheme"
@@ -41,7 +50,7 @@
   "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenios/tipo-entidad"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2008/05/skos#inScheme"
@@ -51,7 +60,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3.org/2008/05/skos#Concept"
+      "@id" : "_:genid24"
     }, {
       "@id" : "_:genid22"
     } ]
@@ -59,103 +68,111 @@
 }, {
   "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2008/05/skos#inScheme"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria"
+  } ]
+}, {
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3.org/2008/05/skos#Concept"
+      "@id" : "_:genid29"
     }, {
-      "@id" : "_:genid26"
+      "@id" : "_:genid27"
     } ]
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenios/tipo-entidad"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://www.w3.org/ns/org#Organization"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2008/05/skos#inScheme"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "https://www.w3.org/ns/org#Organization"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2008/05/skos#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2008/05/skos#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid33"
+      "@id" : "_:genid37"
     }, {
-      "@id" : "_:genid31"
+      "@id" : "_:genid35"
     } ]
   } ]
 }, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/economica-gasto"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2008/05/skos#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area"
-  } ]
-}, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio"
+    "@id" : "https://www.w3.org/ns/org#Organization"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor"
   } ]
 }, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid38"
-    }, {
-      "@id" : "_:genid36"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.w3.org/2008/05/skos#Concept"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor"
   } ]
 }, {
   "@id" : "_:genid38",
@@ -164,26 +181,49 @@
     "@id" : "http://www.w3.org/2008/05/skos#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
   } ]
 }, {
   "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2008/05/skos#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma"
+  } ]
+}, {
+  "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid43"
+      "@id" : "http://www.w3.org/2008/05/skos#Concept"
     }, {
-      "@id" : "_:genid41"
+      "@id" : "_:genid6"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta"
   } ]
 }, {
   "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2008/05/skos#Concept"
   } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2008/05/skos#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
@@ -196,75 +236,10 @@
     "@id" : "http://www.w3.org/2008/05/skos#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento"
   } ]
 }, {
   "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid48"
-    }, {
-      "@id" : "_:genid46"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid46",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.w3.org/2008/05/skos#Concept"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento"
-  } ]
-}, {
-  "@id" : "_:genid48",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2008/05/skos#Concept"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento"
-  } ]
-}, {
-  "@id" : "_:genid49",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid53"
-    }, {
-      "@id" : "_:genid51"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2008/05/skos#Concept"
-    }, {
-      "@id" : "_:genid7"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid51",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://www.w3.org/ns/org#Organization"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area"
-  } ]
-}, {
-  "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://www.w3.org/ns/org#Organization"
@@ -273,30 +248,7 @@
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area"
   } ]
 }, {
-  "@id" : "_:genid54",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid58"
-    }, {
-      "@id" : "_:genid56"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid56",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://www.w3.org/ns/org#Organization"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area"
-  } ]
-}, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://www.w3.org/ns/org#Organization"
@@ -305,30 +257,7 @@
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora"
   } ]
 }, {
-  "@id" : "_:genid59",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid63"
-    }, {
-      "@id" : "_:genid61"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid61",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://www.w3.org/ns/org#Organization"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio"
-  } ]
-}, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://www.w3.org/ns/org#Organization"
@@ -337,60 +266,41 @@
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio"
   } ]
 }, {
-  "@id" : "_:genid64",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid68"
-    }, {
-      "@id" : "_:genid66"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://www.w3.org/ns/org#Organization"
+    "@id" : "http://www.w3.org/2008/05/skos#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor"
+    "@id" : "https://www.w3.org/ns/org#classification"
   } ]
 }, {
-  "@id" : "_:genid68",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor"
-  } ]
-}, {
-  "@id" : "_:genid69",
+  "@id" : "_:genid48",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "HTML"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid49",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RDF"
+  } ]
+}, {
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/programa-gasto"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2008/05/skos#inScheme"
   } ]
 }, {
-  "@id" : "_:genid70",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "RDF"
-  } ]
-}, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+      "@id" : "http://www.w3.org/2008/05/skos#Concept"
     }, {
-      "@id" : "https://www.w3.org/ns/org#Organization"
+      "@id" : "_:genid10"
     } ]
   } ]
 }, {
@@ -418,6 +328,29 @@
   "@id" : "http://purl.org/dc/terms/hasFormat",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Code or identifier of a call or assignment"
+  }, {
+    "@language" : "es",
+    "@value" : "Código o identificador de una convocatoria o de una concesión."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "identificador"
+  }, {
+    "@language" : "en",
+    "@value" : "identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -425,13 +358,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Contains the title of the call or the name of the project in the case of an assignment."
+  }, {
     "@language" : "es",
-    "@value" : "Contiene el título de la subvención"
+    "@value" : "Contiene el título de la convocatoria o el nombre del proyecto en el caso de una concesión."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://purl.org/dc/terms/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -450,8 +386,34 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre."
+  }, {
+    "@language" : "en",
+    "@value" : "Fiscal year. Period of 12 months between the 1st of January and the 31st of December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "año fiscal"
+  }, {
+    "@language" : "en",
+    "@value" : "fiscal year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "La clasificación económica del gasto agrupará los créditos por capítulos separando las operaciones corrientes, las de capital y las financieras.\nAtendiendo a su naturaleza económica, los capítulos se desglosarán en artículos, y éstos, a su vez, en conceptos, que se podrán subdividir en subconceptos. Los subconceptos podrán desarrollarse en partidas."
@@ -472,15 +434,12 @@
     "@language" : "en",
     "@value" : "expense economic classification"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "La clasificación por programa de gasto puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios grupos de programas o programas (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"
@@ -500,9 +459,6 @@
   }, {
     "@language" : "en",
     "@value" : "expense program classification"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion",
@@ -569,27 +525,36 @@
     "@value" : "Esta versión de la ontología de Subvenciones ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña, es una continuación de la ontología descrita en http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-12-04"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Clase para almacenar los datos propios de la relación de una Subvención y su correspondiente Organización"
+    "@value" : "Clase para almacenar la subvención concedida a una organización."
   }, {
     "@language" : "en",
-    "@value" : "Class to store the data of the relationship of a Grant and its corresponding Organisation"
+    "@value" : "Class to store the grant awarded to an organisation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "AsignaciónBeneficiarioSubvención"
-  }, {
     "@language" : "en",
-    "@value" : "GrantBeneficiaryAllocation"
+    "@value" : "Award of a Grant"
+  }, {
+    "@language" : "es",
+    "@value" : "Concesión de Subvención"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid30"
+  }, {
+    "@id" : "_:genid31"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio",
@@ -612,44 +577,51 @@
     "@value" : "Convenio"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid28"
+    "@id" : "_:genid32"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Esta clase representa el concepto principal de esta ontología, que es el de la subvención que concede un municipio a alguna organización"
+    "@value" : "Esta clase representa el concepto principal de esta ontología, que es el de la covocatoria de una subvención que concede un municipio a alguna organización."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents the main concept of this ontology, which is the call for a grant that a municipality grants to an organisation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Grant"
+    "@value" : "Call for Grant"
   }, {
     "@language" : "es",
-    "@value" : "Subvención"
+    "@value" : "Convocatoria de Subvención"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid29"
+    "@id" : "_:genid33"
   }, {
-    "@id" : "_:genid34"
+    "@id" : "_:genid38"
   }, {
     "@id" : "_:genid39"
   }, {
+    "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid43"
+  }, {
     "@id" : "_:genid44"
   }, {
-    "@id" : "_:genid49"
+    "@id" : "_:genid45"
   }, {
-    "@id" : "_:genid54"
-  }, {
-    "@id" : "_:genid59"
-  }, {
-    "@id" : "_:genid64"
+    "@id" : "_:genid46"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras",
@@ -659,10 +631,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Documento de gestión de la subvención que establece los criterios y regula la oncesión de la subvención."
+    "@value" : "Documento de gestión de la subvención que establece los criterios y regula la concesión de la subvención."
+  }, {
+    "@language" : "en",
+    "@value" : "Grant management document that establishes the criteria and regulates the granting of the grant."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -678,17 +653,46 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-11-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Propiedad que identifica la subvención de una asignación."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "convocatoria"
+  }, {
+    "@language" : "en",
+    "@value" : "has grant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Fecha de acuerdo de iniciación de la subvención."
+  }, {
+    "@language" : "en",
+    "@value" : "Grant initiation agreement date."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -704,43 +708,49 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date the grant is awarded."
+  }, {
     "@language" : "es",
     "@value" : "Fecha en que se concede la subvención."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "award date"
-  }, {
     "@language" : "es",
-    "@value" : "fecha de adjudicación"
+    "@value" : "fecha de concesión"
+  }, {
+    "@language" : "en",
+    "@value" : "grant date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date on which the grant is requested."
+  }, {
     "@language" : "es",
     "@value" : "Fecha en la que se solicita la subvención."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -756,8 +766,43 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2021-03-02"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property to include the economic classification of expenditure as text. All classifications will be stored as a single string, differentiated with a separator. This property will be deprecated."
+  }, {
+    "@language" : "es",
+    "@value" : "Propiedad para incluir la clasificación económica de gasto como texto. Todas las clasificaciones se almacenarán como un único string, diferenciados con un separador. Esta propiedad quedará obsoleta."
+  }, {
+    "@language" : "es",
+    "@value" : "Valor establecido, de forma manual, para la clasificación económica de gasto. Esta propiedad está obsoleta."
+  }, {
+    "@language" : "en",
+    "@value" : "Value established, manually, for the economic classification of expense. This property is deprecated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "gasto como texto"
+  }, {
+    "@language" : "en",
+    "@value" : "spend as text"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@value" : ""
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
@@ -766,7 +811,7 @@
     "@value" : "Propiedad que indica la entidad que gestiona la subvención"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -779,46 +824,80 @@
     "@value" : "managed by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeAdjudicado",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-11-30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Grant amount awarded to an organisation."
+  }, {
     "@language" : "es",
-    "@value" : "Importe de subvención concedido a una organización"
+    "@value" : "Importe de subvención concedido a una organización."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "ammount awarded"
+    "@value" : "allocated amount"
   }, {
     "@language" : "es",
-    "@value" : "importe adjudicado"
+    "@value" : "importe concedido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2021-02-15"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Importe inicial presupuestado de una subvención."
+  }, {
+    "@language" : "en",
+    "@value" : "Initial Budgeted Amount of a Grant."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
+  }, {
+    "@language" : "en",
+    "@value" : "budgeted amount"
+  }, {
+    "@language" : "es",
+    "@value" : "importe presupuestado"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Amount required when applying for a grant."
+  }, {
     "@language" : "es",
     "@value" : "Importe que se requiere al solicitar la subvención."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -835,16 +914,19 @@
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Importe total de la subvención."
+    "@value" : "Importe total concedido de la subvención por una organización convocante, no tiene por qué coincidir con el importe inicial presupuestado."
+  }, {
+    "@language" : "en",
+    "@value" : "The total amount of the grant awarded by a convening organisation, does not have to coincide with the initial amount budgeted."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -854,14 +936,14 @@
     "@value" : "importe total concedido"
   }, {
     "@language" : "en",
-    "@value" : "total ammount awarded"
+    "@value" : "total amount awarded"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
@@ -870,7 +952,7 @@
     "@value" : "Convenio que es instrumentado por una subvención"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -890,7 +972,7 @@
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
@@ -912,7 +994,7 @@
     "@value" : "instrumentado por"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa",
@@ -921,11 +1003,14 @@
     "@value" : "2020-10-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that indicates whether the grant is nominative, which is the one whose purpose, budget allocation and beneficiary are expressly determined in the statement of budget expenses."
+  }, {
     "@language" : "es",
-    "@value" : "Campo que indica si la subvención es nominativa, que es aquella cuyo objeto, dotación presupuestaria y beneficiario aparecen determinados expresamente en el estado de gastos del presupuesto."
+    "@value" : "Propiedad que indica si la subvención es nominativa, que es aquella cuyo objeto, dotación presupuestaria y beneficiario aparecen determinados expresamente en el estado de gastos del presupuesto."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -942,16 +1027,19 @@
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Finalidad de la subvencón."
+    "@value" : "Finalidad de la subvención."
+  }, {
+    "@language" : "en",
+    "@value" : "Purpose of the grant."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -967,30 +1055,33 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneSubvencion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
-    "@value" : "2020-11-30"
+    "@value" : "2021-03-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Propiedad que identifica la subvención de una asignación."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion"
+    "@value" : "Property to include the program classification as text. All programs will be stored as a single string, differentiated with a separator. This property will be deprecated."
+  }, {
+    "@language" : "es",
+    "@value" : "Propiedad para incluir la clasificación de programa como texto. Todos los programas se almacenarán como un único string, diferenciados con un separador. Esta propiedad quedará obsoleta."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has grant"
+    "@value" : "program as text"
   }, {
     "@language" : "es",
-    "@value" : "tiene subvención"
+    "@value" : "programa como texto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica",
@@ -1003,7 +1094,7 @@
     "@value" : "Temática asociada a una subvención"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -1016,11 +1107,11 @@
     "@value" : "tiene temática"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid12"
+    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2020-10-02"
   } ],
@@ -1029,7 +1120,7 @@
     "@value" : "Tipo de instrumento asociado a una subvención"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -1042,7 +1133,7 @@
     "@value" : "type of tool"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid16"
+    "@id" : "_:genid8"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento",
@@ -1055,7 +1146,7 @@
     "@value" : "Tipo de procedimiento por el cual se realiza la subvención."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion"
@@ -1068,11 +1159,11 @@
     "@value" : "type of procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid20"
+    "@id" : "_:genid12"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2015-03-20"
@@ -1082,7 +1173,7 @@
     "@value" : "Área del ayuntamiento que concede la subvención"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"
@@ -1098,8 +1189,38 @@
     "@id" : "https://www.w3.org/ns/org#Organization"
   } ]
 }, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-10-02"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that identifies the awardee of a grant. Its rank is not specified, as it can be an organisation or a person, which is treated as an organisation. A specific range may be specified in the future (for example, org: W3C Organization Ontology Organization)."
+  }, {
+    "@language" : "es",
+    "@value" : "Propiedad que identifica al adjudicatario de una subvención. No se especifica su rango, pues puede ser una organización o una persona, que es tratada como una organización. Es posible que en el futuro se especifique un rango específico (por ejemplo, org:Organization de la W3C Organization Ontology)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "beneficiario"
+  }, {
+    "@language" : "en",
+    "@value" : "beneficiary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/org#Organization"
+  } ]
+}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2015-03-20"
@@ -1109,7 +1230,7 @@
     "@value" : "Entidad que financia la subvención"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"
@@ -1129,7 +1250,7 @@
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2015-03-20"
@@ -1139,7 +1260,7 @@
     "@value" : "Servicio del ayuntamiento que ofrece la subvención"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"
@@ -1153,33 +1274,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://www.w3.org/ns/org#Organization"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-10-02"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Propiedad que identifica al adjudicatario de una subvención. No se especifica su rango, pues puede ser una persona o una organización. Es posible que en el futuro se especifique un rango específico (por ejemplo, org:Organization de la W3C Organization Ontology)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has beneficiary"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene beneficiario"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito",
@@ -1238,6 +1332,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
@@ -1312,46 +1409,22 @@
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://xmlns.com/foaf/0.1/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "A name for some thing."
   }, {
     "@language" : "es",
-    "@value" : "Un nombre para alguna cosa"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Un nombre para alguna cosa."
+  }, {
     "@language" : "en",
     "@value" : "name"
   }, {
     "@language" : "es",
     "@value" : "nombre"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://schema.org/name"
-  } ]
-}, {
-  "@id" : "https://schema.org/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Nombre del proyecto al que está asociada la subvención"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "nombre de proyecto"
-  }, {
-    "@language" : "en",
-    "@value" : "project name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1368,10 +1441,13 @@
   }, {
     "@language" : "es",
     "@value" : "Organización"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid47"
   } ]
 }, {
   "@id" : "https://www.w3.org/ns/org#classification",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Ordenación jerárquica que se hace de una organización dentro de un esquema de clasificación"
@@ -1390,24 +1466,13 @@
     "@value" : "classification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid24"
+    "@id" : "_:genid16"
   } ]
 }, {
   "@id" : "https://www.w3.org/ns/org#identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Código o identificador de una subvención"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3.org/ns/org#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "identificador"
-  }, {
-    "@language" : "en",
-    "@value" : "identifier"
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/org#Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"

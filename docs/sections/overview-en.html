@@ -8,6 +8,14 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio">Agreement</a>
    </li>
    <li>
+      <a href="#Concesion"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion">Award of a Grant</a>
+   </li>
+   <li>
+      <a href="#Convocatoria"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria">Call for Grant</a>
+   </li>
+   <li>
       <a href="#http://www.w3.org/2008/05/skos#Concept" title="http://www.w3.org/2008/05/skos#Concept">Concept</a>
    </li>
    <li>
@@ -18,20 +26,16 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">District</a>
    </li>
    <li>
-      <a href="#Subvencion"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Subvencion">Grant</a>
-   </li>
-   <li>
-      <a href="#AsignacionBeneficiarioSubvencion"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#AsignacionBeneficiarioSubvencion">GrantBeneficiaryAllocation</a>
-   </li>
-   <li>
       <a href="#https://www.w3.org/ns/org#Organization" title="https://www.w3.org/ns/org#Organization">Organisation</a>
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area"
          title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area">area</a>
+   </li>
+   <li>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario"
+         title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario">beneficiary</a>
    </li>
    <li>
       <a href="#https://www.w3.org/ns/org#classification" title="https://www.w3.org/ns/org#classification">classification</a>
@@ -49,12 +53,8 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora">financing entity</a>
    </li>
    <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario"
-         title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#tieneBeneficiario">has beneficiary</a>
-   </li>
-   <li>
-      <a href="#tieneSubvencion"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneSubvencion">has grant</a>
+      <a href="#convocatoria"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria">has grant</a>
    </li>
    <li>
       <a href="#tieneTematica"
@@ -93,8 +93,8 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo">agreement date</a>
    </li>
    <li>
-      <a href="#importeAdjudicado"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeAdjudicado">ammount awarded</a>
+      <a href="#importeConcedido"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido">allocated amount</a>
    </li>
    <li>
       <a href="#importeSolicitado"
@@ -105,8 +105,19 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud">application date</a>
    </li>
    <li>
-      <a href="#fechaAdjudicacion"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAdjudicacion">award date</a>
+      <a href="#importePresupuestado"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado">budgeted amount</a>
+   </li>
+   <li>
+      <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">fiscal year</a>
+   </li>
+   <li>
+      <a href="#fechaConcesion"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion">grant date</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
    </li>
    <li>
       <a href="#https://www.w3.org/ns/org#identifier" title="https://www.w3.org/ns/org#identifier">identifier</a>
@@ -123,18 +134,23 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto">object</a>
    </li>
    <li>
-      <a href="#https://schema.org/name" title="https://schema.org/name">project name</a>
+      <a href="#programaAsText"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText">program as text</a>
    </li>
    <li>
       <a href="#basesReguladoras"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras">regulatory base</a>
    </li>
    <li>
+      <a href="#gastoAsText"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText">spend as text</a>
+   </li>
+   <li>
       <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">title</a>
    </li>
    <li>
       <a href="#importeTotalConcedido"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido">total ammount awarded</a>
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido">total amount awarded</a>
    </li>
 </ul><h4>Named Individuals</h4><ul class="hlist">
    <li>
