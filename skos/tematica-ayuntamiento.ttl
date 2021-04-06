@@ -23,78 +23,65 @@
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/vivienda-y-urbanismo> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "vivienda-y-urbanismo" ;
-	skos:prefLabel "vivienda-y-urbanismo" ;
-  skos:prefLabel "Subvenciones con temática relativa a vivienda y urbanismo"@es .
+    skos:notation "vivienda-y-urbanismo" ;    
+    skos:prefLabel "Vivienda y urbanismo"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/comercio-turismo-y-pymes> a skos:Concept ;
   skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
   skos:notation "comercio-turismo-y-pymes" ;
-  skos:prefLabel "comercio-turismo-y-pymes" ;
-  skos:prefLabel "Subvenciones con temática relativa a comercio, turismo y PYMES"@es .
+  skos:prefLabel "Comercio, turismo y PYMES"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cooperacion-al-desarrollo> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "cooperacion-al-desarrollo" ;
-	skos:prefLabel "cooperacion-al-desarrollo" ;
-  skos:prefLabel "Subvenciones con temática relativa a la cooperación al desarrollo"@es .
+    skos:notation "cooperacion-al-desarrollo" ;
+    skos:prefLabel "Cooperación al desarrollo"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/cultura> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "cultura" ;
-	skos:prefLabel "cultura" ;
-  skos:prefLabel "Subvenciones con temática relativa a la cultura"@es .
+    skos:notation "cultura" ;
+    skos:prefLabel "Cultura"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/educacion> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "educacion" ;
-	skos:prefLabel "educacion" ;
-  skos:prefLabel "Subvenciones con temática relativa a la educación"@es .
+    skos:notation "educacion" ;
+    skos:prefLabel "Educación"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/empleo> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "empleo" ;
-	skos:prefLabel "empleo" ;
-  skos:prefLabel "Subvenciones con temática relativa al empleo y su fomento"@es .
+    skos:notation "empleo" ;
+    skos:prefLabel "Empleo y su fomento"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/investigacion-desarrollo-e-innovacion> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "investigacion-desarrollo-e-innovacion" ;
-	skos:prefLabel "investigacion-desarrollo-e-innovacion" ;
-  skos:prefLabel "Subvenciones con temática relativa a la investigación, desarrollo e innovación"@es .
+    skos:notation "investigacion-desarrollo-e-innovacion" ;
+    skos:prefLabel "Investigación, desarrollo e innovación"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/justicia> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "justicia" ;
-	skos:prefLabel "justicia" ;
-  skos:prefLabel "Subvenciones con temática relativa a la justicia"@es .
+    skos:notation "justicia" ;
+    skos:prefLabel "Justicia"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico" ;
-	skos:prefLabel "asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico" ;
-  skos:prefLabel "Subvenciones con temática relativa al asociacionismo y paricipación y a otras acuaciones de caracter económico"@es .
+    skos:notation "asociacionismo-y-participacion-otras-actuaciones-de-caracter-economico" ;
+    skos:prefLabel "Asociacionismo y participación y a otras actuaciones de caracter económico"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/sanidad> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "sanidad" ;
-	skos:prefLabel "sanidad" ;
-  skos:prefLabel "Subvenciones con temática relativa a la sanidad"@es .
+    skos:notation "sanidad" ;
+    skos:prefLabel "Sanidad"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/servicios-sociales-y-promocion-social> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "servicios-sociales-y-promocion-social" ;
-	skos:prefLabel "servicios-sociales-y-promocion-social" ;
-  skos:prefLabel "Subvenciones con temática relativa a los servicios sociales y promoción social"@es .
+    skos:notation "servicios-sociales-y-promocion-social" ;
+    skos:prefLabel "Servicios sociales y promoción social"@es .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/deporte> a skos:Concept ;
-	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
-  skos:notation "deporte" ;
-	skos:prefLabel "deporte" ;
-  skos:prefLabel "Subvenciones con temática relativa al deporte y su promoción"@es .
+    skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
+    skos:notation "deporte" ;
+    skos:prefLabel "Deporte y su promoción"@es .
 
   <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento/medio-ambiente-y-sostenibilidad> a skos:Concept ;
   	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> ;
     skos:notation "medio-ambiente-y-sostenibilidad" ;
-  	skos:prefLabel "medio-ambiente-y-sostenibilidad" ;
-    skos:prefLabel "Subvenciones con temática relativa al medio ambiente y sostenibilidad"@es .
+    skos:prefLabel "Medio ambiente y sostenibilidad"@es .
