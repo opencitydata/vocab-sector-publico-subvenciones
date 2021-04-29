@@ -1,0 +1,728 @@
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/contributor> "María Carmen Ruiz Moreno - Ayuntamiento de Madrid" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Gallego San Miguel - Ayuntamiento de Madrid" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/contributor> "María del Mar Arribas de Andrés - Ayuntamiento de Madrid" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/contributor> "Red.es" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Informática - Ayuntamiento de Santiago de Compostela" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/contributor> "Víctor Morlán Plo - Ayuntamiento de Zaragoza" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/creator> "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/creator> "Francisco Yedro (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/description> "Este vocabulario se utiliza para la descripción de datos relacionados con subvenciones concedidas por un municipio. Esta ontología es una ampliación de la ontología http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/description> "This vocabulary is used to describe data related to grants awarded by a municipality. This ontology is an extension of the ontology http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre subvenciones concedidas por un municipio"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/elements/1.1/title> "Vocabulary for the representation of data on grants awarded by a municipality"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/dc/terms/issued> "2020-10-02"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/vocab/vann/preferredNamespacePrefix> "essubv" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> <http://www.w3.org/2002/07/owl#versionInfo> "Esta versión de la ontología de Subvenciones ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña, es una continuación de la ontología descrita en http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion"@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación económica del gasto agrupará los créditos por capítulos separando las operaciones corrientes, las de capital y las financieras.\nAtendiendo a su naturaleza económica, los capítulos se desglosarán en artículos, y éstos, a su vez, en conceptos, que se podrán subdividir en subconceptos. Los subconceptos podrán desarrollarse en partidas."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación económica puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios conceptos o subconceptos (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "The economic classification of the expenses will group the credits by chapters separating the current operations, those of capital and the financial ones.\nBased on their economic nature, the chapters will be broken down into articles, and these, in turn, into concepts, which can be subdivided into subconcepts. Subconcepts may be developed in budget items."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#label> "clasificación económica gasto"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#label> "expense economic classification"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación por programa de gasto puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios grupos de programas o programas (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#comment> "Los créditos se ordenarán según su finalidad y los objetivos que con ellos se proponga conseguir, con arreglo a la clasificación por áreas de gasto, políticas de gasto, grupos de programas y programas. Estos últimos podrán desarrollarse en subprogramas."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#comment> "The credits will be arranged according to their purpose and the objectives that they intend to achieve, according to the classification by areas of expenditure, expenditure policies, groups of programs and programs. The latter may be developed in subprograms."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#label> "clasificación programa gasto"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#label> "expense program classification"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> <http://purl.org/dc/terms/issued> "2020-11-30" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que identifica la subvención de una asignación."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> <http://www.w3.org/2000/01/rdf-schema#label> "convocatoria"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> <http://www.w3.org/2000/01/rdf-schema#label> "has grant"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3.org/ns/org#Organization> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que indica la entidad que gestiona la subvención"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> <http://www.w3.org/2000/01/rdf-schema#label> "gestionado por"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> <http://www.w3.org/2000/01/rdf-schema#label> "managed by"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://www.w3.org/2000/01/rdf-schema#comment> "Convenio que es instrumentado por una subvención"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://www.w3.org/2000/01/rdf-schema#label> "implement"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> <http://www.w3.org/2000/01/rdf-schema#label> "instrumenta"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Convenio que instrumenta una subvención"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> <http://www.w3.org/2000/01/rdf-schema#label> "implemented by"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> <http://www.w3.org/2000/01/rdf-schema#label> "instrumentado por"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2008/05/skos#Concept> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2008/05/skos#inScheme> .
+_:genid6 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> <http://www.w3.org/2000/01/rdf-schema#comment> "Temática asociada a una subvención"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> <http://www.w3.org/2000/01/rdf-schema#label> "has thematic"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> <http://www.w3.org/2000/01/rdf-schema#label> "tiene temática"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2008/05/skos#Concept> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2008/05/skos#inScheme> .
+_:genid10 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de instrumento asociado a una subvención"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de instrumento"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#label> "type of tool"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#range> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2008/05/skos#Concept> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2008/05/skos#inScheme> .
+_:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de procedimiento por el cual se realiza la subvención."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de procedimiento"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#label> "type of procedure"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> <http://purl.org/dc/terms/issued> "2015-03-20"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> <http://www.w3.org/2000/01/rdf-schema#comment> "Área del ayuntamiento que concede la subvención"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> <http://www.w3.org/2000/01/rdf-schema#label> "area"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> <http://www.w3.org/2000/01/rdf-schema#label> "área"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://purl.org/dc/terms/issued> "2020-10-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that identifies the awardee of a grant. Its rank is not specified, as it can be an organisation or a person, which is treated as an organisation. A specific range may be specified in the future (for example, org: W3C Organization Ontology Organization)."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que identifica al adjudicatario de una subvención. No se especifica su rango, pues puede ser una organización o una persona, que es tratada como una organización. Es posible que en el futuro se especifique un rango específico (por ejemplo, org:Organization de la W3C Organization Ontology)."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://www.w3.org/2000/01/rdf-schema#label> "beneficiario"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> <http://www.w3.org/2000/01/rdf-schema#label> "beneficiary"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://purl.org/dc/terms/issued> "2015-03-20"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad que financia la subvención"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://www.w3.org/2000/01/rdf-schema#label> "entidad  financiadora"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> <http://www.w3.org/2000/01/rdf-schema#label> "financing entity"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> <http://purl.org/dc/terms/issued> "2015-03-20"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> <http://www.w3.org/2000/01/rdf-schema#comment> "Servicio del ayuntamiento que ofrece la subvención"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> <http://www.w3.org/2000/01/rdf-schema#label> "service"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> <http://www.w3.org/2000/01/rdf-schema#label> "servicio"@es .
+# 
+# http://www.w3.org/2008/05/skos#inScheme
+<http://www.w3.org/2008/05/skos#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2008/05/skos#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+<http://www.w3.org/2008/05/skos#inScheme> <http://purl.org/dc/terms/issued> "2008-05-xx" .
+<http://www.w3.org/2008/05/skos#inScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept may be a member of more than one concept scheme."@en .
+<http://www.w3.org/2008/05/skos#inScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos> .
+<http://www.w3.org/2008/05/skos#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "is in scheme"@en .
+<http://www.w3.org/2008/05/skos#inScheme> <http://www.w3.org/2004/02/skos/core#definition> "A concept scheme in which the concept is included."@en .
+# 
+# https://www.w3.org/ns/org#classification
+<https://www.w3.org/ns/org#classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/ns/org#classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://www.w3.org/ns/org#classification> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3.org/ns/org#Organization> .
+<https://www.w3.org/ns/org#classification> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2008/05/skos#Concept> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2008/05/skos#inScheme> .
+_:genid18 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenios/tipo-entidad> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/org#classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Ordenación jerárquica que se hace de una organización dentro de un esquema de clasificación"@es .
+<https://www.w3.org/ns/org#classification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.w3.org/ns/org#" .
+<https://www.w3.org/ns/org#classification> <http://www.w3.org/2000/01/rdf-schema#label> "clasificación"@es .
+<https://www.w3.org/ns/org#classification> <http://www.w3.org/2000/01/rdf-schema#label> "classification"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Code or identifier of a call or assignment"@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Código o identificador de una convocatoria o de una concesión."@es .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/dc/terms/" .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificador"@es .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains the title of the call or the name of the project in the case of an assignment."@en .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Contiene el título de la convocatoria o el nombre del proyecto en el caso de una concesión."@es .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/dc/terms/" .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "title"@en .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "título"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#comment> "Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#comment> "Fiscal year. Period of 12 months between the 1st of January and the 31st of December."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#label> "año fiscal"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#label> "fiscal year"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://www.w3.org/2000/01/rdf-schema#comment> "Documento de gestión de la subvención que establece los criterios y regula la concesión de la subvención."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://www.w3.org/2000/01/rdf-schema#comment> "Grant management document that establishes the criteria and regulates the granting of the grant."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://www.w3.org/2000/01/rdf-schema#label> "bases reguladoras"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#basesReguladoras> <http://www.w3.org/2000/01/rdf-schema#label> "regulatory base"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de acuerdo de iniciación de la subvención."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://www.w3.org/2000/01/rdf-schema#comment> "Grant initiation agreement date."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://www.w3.org/2000/01/rdf-schema#label> "agreement date"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaAcuerdo> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de acuerdo"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://www.w3.org/2000/01/rdf-schema#comment> "Date the grant is awarded."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en que se concede la subvención."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de concesión"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaConcesion> <http://www.w3.org/2000/01/rdf-schema#label> "grant date"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#comment> "Date on which the grant is requested."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que se solicita la subvención."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#label> "application date"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de solicitud"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText> <http://purl.org/dc/terms/issued> "2021-03-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to include the economic classification of expenditure as text. A call or a grant can have multiple classifications that will be stored as a single string, differentiated with a separator. This property will be deprecated when implementing classification as a SKOS."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad para incluir la clasificación económica de gasto como texto. Una convocatoria o una subvención puede tener varias clasificaciones que se almacenarán como un único string, diferenciados con un separador. Esta propiedad quedará obsoleta al implementar la clasificación como un SKOS."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText> <http://www.w3.org/2000/01/rdf-schema#label> "gasto como texto"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText> <http://www.w3.org/2000/01/rdf-schema#label> "spend as text"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gastoAsText> <http://www.w3.org/2002/07/owl#deprecated> "" .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://purl.org/dc/terms/issued> "2020-11-30" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://www.w3.org/2000/01/rdf-schema#comment> "Grant amount awarded to an organisation."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://www.w3.org/2000/01/rdf-schema#comment> "Importe de subvención concedido a una organización."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://www.w3.org/2000/01/rdf-schema#label> "allocated amount"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeConcedido> <http://www.w3.org/2000/01/rdf-schema#label> "importe concedido"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://purl.org/dc/terms/issued> "2021-02-15" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://www.w3.org/2000/01/rdf-schema#comment> "Importe inicial presupuestado de una subvención."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://www.w3.org/2000/01/rdf-schema#comment> "Initial Budgeted Amount of a Grant."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://www.w3.org/2000/01/rdf-schema#label> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://www.w3.org/2000/01/rdf-schema#label> "budgeted amount"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importePresupuestado> <http://www.w3.org/2000/01/rdf-schema#label> "importe presupuestado"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount required when applying for a grant."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://www.w3.org/2000/01/rdf-schema#comment> "Importe que se requiere al solicitar la subvención."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://www.w3.org/2000/01/rdf-schema#label> "amount requested"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeSolicitado> <http://www.w3.org/2000/01/rdf-schema#label> "importe solicitado"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://www.w3.org/2000/01/rdf-schema#comment> "Importe total concedido de la subvención por una organización convocante, no tiene por qué coincidir con el importe inicial presupuestado."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://www.w3.org/2000/01/rdf-schema#comment> "The total amount of the grant awarded by a convening organisation, does not have to coincide with the initial amount budgeted."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://www.w3.org/2000/01/rdf-schema#label> "importe total concedido"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#importeTotalConcedido> <http://www.w3.org/2000/01/rdf-schema#label> "total amount awarded"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that indicates whether the grant is nominative, which is the one whose purpose, budget allocation and beneficiary are expressly determined in the statement of budget expenses."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que indica si la subvención es nominativa, que es aquella cuyo objeto, dotación presupuestaria y beneficiario aparecen determinados expresamente en el estado de gastos del presupuesto."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa> <http://www.w3.org/2000/01/rdf-schema#label> "nominativa"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#nominativa> <http://www.w3.org/2000/01/rdf-schema#label> "nominative"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://www.w3.org/2000/01/rdf-schema#comment> "Finalidad de la subvención."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://www.w3.org/2000/01/rdf-schema#comment> "Purpose of the grant."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://www.w3.org/2000/01/rdf-schema#label> "object"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#objeto> <http://www.w3.org/2000/01/rdf-schema#label> "objeto"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText> <http://purl.org/dc/terms/issued> "2021-03-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to include expense program classification as text. A call or a grant can have multiple classifications that will be stored as a single string, differentiated with a separator. This property will be deprecated when implementing classification as a SKOS."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad para incluir la clasificación de programa de gasto como texto. Una convocatoria o una subvención puede tener varias clasificaciones que se almacenarán como un único string, diferenciados con un separador. Esta propiedad quedará obsoleta al implementar la clasificación como un SKOS."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText> <http://www.w3.org/2000/01/rdf-schema#label> "program as text"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText> <http://www.w3.org/2000/01/rdf-schema#label> "programa como texto"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#programaAsText> <http://www.w3.org/2002/07/owl#deprecated> "" .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#comment> "A name for some thing."@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#comment> "Un nombre para alguna cosa."@es .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://xmlns.com/foaf/0.1/" .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "nombre"@es .
+# 
+# https://www.w3.org/ns/org#identifier
+<https://www.w3.org/ns/org#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3.org/ns/org#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3.org/ns/org#Organization> .
+<https://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Code or identifier of an organisation."@en .
+<https://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Código o identificador de una organización."@es .
+<https://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.w3.org/ns/org#" .
+<https://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificador"@es .
+<https://www.w3.org/ns/org#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/District
+<http://dbpedia.org/ontology/District> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> .
+_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#convocatoria> .
+_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/org#Organization> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#beneficiario> .
+_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3.org/ns/org#Organization> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2008/05/skos#Concept> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2008/05/skos#Concept> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://purl.org/dc/terms/issued> "2020-12-04" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase para almacenar la subvención concedida a una organización."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/2000/01/rdf-schema#comment> "Class to store the grant awarded to an organisation."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/2000/01/rdf-schema#label> "Award of a Grant"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Concesion> <http://www.w3.org/2000/01/rdf-schema#label> "Concesión de Subvención"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumentadoPor> .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> <http://www.w3.org/2000/01/rdf-schema#comment> "Acuerdos con efectos jurídicos adoptados por los ayuntamientos con entes públicos o privados."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> <http://www.w3.org/2000/01/rdf-schema#comment> "Agreements with legal effects adopted by municipalities with public or private entities."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/sector-publico/convenio" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> <http://www.w3.org/2000/01/rdf-schema#label> "Agreement"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> <http://www.w3.org/2000/01/rdf-schema#label> "Convenio"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid33 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> .
+_:genid37 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#gestionadoPor> .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/org#Organization> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2008/05/skos#Concept> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> .
+_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2008/05/skos#Concept> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#instrumenta> .
+_:genid40 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convenio> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tieneTematica> .
+_:genid41 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2008/05/skos#Concept> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoInstrumento> .
+_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2008/05/skos#Concept> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#tipoProcedimiento> .
+_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2008/05/skos#Concept> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#area> .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/org#Organization> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#entidadFinanciadora> .
+_:genid45 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/org#Organization> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#servicio> .
+_:genid46 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/org#Organization> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://purl.org/dc/terms/issued> "2020-10-02" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta clase representa el concepto principal de esta ontología, que es el de la covocatoria de una subvención que concede un municipio a alguna organización."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the main concept of this ontology, which is the call for a grant that a municipality grants to an organisation."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#label> "Call for Grant"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/subvencion#Convocatoria> <http://www.w3.org/2000/01/rdf-schema#label> "Convocatoria de Subvención"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/District> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "District"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito"@es .
+# 
+# http://www.geonames.org/ontology#Feature
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2008/05/skos#Concept
+<http://www.w3.org/2008/05/skos#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2008/05/skos#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+<http://www.w3.org/2008/05/skos#Concept> <http://purl.org/dc/terms/issued> "2008-05-xx" .
+<http://www.w3.org/2008/05/skos#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos> .
+<http://www.w3.org/2008/05/skos#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://www.w3.org/2008/05/skos#Concept> <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
+# 
+# http://www.w3.org/2008/05/skos#ConceptScheme
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://purl.org/dc/terms/issued> "2008-05-xx" .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept scheme may be defined to include concepts from different sources."@en .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos> .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Concept Scheme"@en .
+<http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/2004/02/skos/core#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+# 
+# https://www.w3.org/ns/org#Organization
+<https://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/org#classification> .
+_:genid47 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2008/05/skos#Concept> .
+<https://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa a todas las organizaciones que intervenen en el proceso de una subvención. Tanto las que forman parte de la publicación de la convocatoria, como las entidades financiadoras, áreas o servicios, como las organizaciones adjudicatarias de la subvención. En este vocabulario, las personas físicas son consideradas como organizaciones."@es .
+<https://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents all organisations involved in the grant process. Both those that are part of the publication of the call, as well as the financing entities, areas or services, as well as the organisations awarded. In this vocabulary, individuals are considered as organisations."@en .
+<https://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.w3.org/ns/org#" .
+<https://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@en .
+<https://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organización"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenios/tipo-entidad
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenios/tipo-entidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenios/tipo-entidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tematica-ayuntamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/subvencion/tipo-instrumento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+# 
+# http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/economica-gasto
+<http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/economica-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/economica-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+# 
+# http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/programa-gasto
+<http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/programa-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/page/datosabiertos/kos/hacienda/presupuesto/programa-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+# 
+# http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento
+<http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/convenio/tipo-procedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos#ConceptScheme> .
+# 
+_:genid48 <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
+_:genid49 <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
